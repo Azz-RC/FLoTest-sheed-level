@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasil Tes — FloTest</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="sidebar" aria-label="Sidebar navigasi">
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <div class="brand-icon">Flo</div>
+          <span class="brand-name">Flo<span>Test</span></span>
+        </div>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar">AW</div>
+        <div class="user-info">
+          <div class="user-name">Andi Wijaya</div>
+          <div class="user-role">Menti</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Menu menti">
+        <div class="nav-label">Menu</div>
+        <a href="dashboard.html" class="nav-item">
+          <span class="nav-icon">🏠</span> Dashboard
+        </a>
+        <a href="take-test.html" class="nav-item">
+          <span class="nav-icon">✏️</span> Kerjakan Tes
+        </a>
+        <a href="result.html" class="nav-item active">
+          <span class="nav-icon">📊</span> Hasil Tes
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html" class="nav-item btn-danger">
+          <span class="nav-icon">🚪</span> Keluar
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <header class="topbar">
+        <span class="topbar-title">Hasil Tes</span>
+        <div class="topbar-actions">
+          <a href="dashboard.html" class="btn btn-outline btn-sm">← Kembali</a>
+        </div>
+      </header>
+
+      <main class="page-body">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="dashboard.html">Dashboard</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Hasil Tes — HTML Basic Test</span>
+        </nav>
+
+        <section class="result-score-card" aria-labelledby="score-heading">
+          <h1 id="score-heading" class="score-card-title">HTML Basic Test</h1>
+          
+          <div class="result-score-value">80</div>
+          <div class="result-score-label">Nilai Kamu</div>
+          
+          <div class="result-score-meta">
+            <div class="result-meta-item">
+              <span class="result-meta-value">8</span>
+              <span class="result-meta-label">Benar</span>
+            </div>
+            <div class="result-meta-item">
+              <span class="result-meta-value">2</span>
+              <span class="result-meta-label">Salah</span>
+            </div>
+            <div class="result-meta-item">
+              <span class="result-meta-value">10</span>
+              <span class="result-meta-label">Total Soal</span>
+            </div>
+            <div class="result-meta-item">
+              <span class="result-meta-value">38m</span>
+              <span class="result-meta-label">Waktu</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="detail-heading">
+          <div class="card-header">
+            <h2 class="card-title" id="detail-heading">Detail Jawaban</h2>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Pertanyaan</th>
+                  <th>Jawaban Anda</th>
+                  <th>Jawaban Benar</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Apa fungsi HTML?</td>
+                  <td>A. HyperText Markup Language — bahasa untuk membuat struktur dan konten halaman web</td>
+                  <td>A. HyperText Markup Language — bahasa untuk membuat struktur dan konten halaman web</td>
+                  <td><span class="answer-status answer-correct">✅ Benar</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Elemen HTML yang digunakan untuk membuat baris baru (line break) adalah...</td>
+                  <td>B. &lt;lb&gt;</td>
+                  <td>A. &lt;br&gt;</td>
+                  <td><span class="answer-status answer-wrong">❌ Salah</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <span>© 2026 FloTest</span>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>

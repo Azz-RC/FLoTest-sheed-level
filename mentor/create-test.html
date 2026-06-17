@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buat Tes — FloTest</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Sidebar navigasi">
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <div class="brand-icon">Flo</div>
+          <span class="brand-name">Flo<span>Test</span></span>
+        </div>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar">BS</div>
+        <div class="user-info">
+          <div class="user-name">Budi Santoso</div>
+          <div class="user-role">Mentor</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Menu mentor">
+        <div class="nav-label">Menu</div>
+        <a href="dashboard.html" class="nav-item">
+          <span class="nav-icon">🏠</span> Dashboard
+        </a>
+        <a href="tests.html" class="nav-item">
+          <span class="nav-icon">📄</span> Daftar Tes
+        </a>
+        <a href="create-test.html" class="nav-item active">
+          <span class="nav-icon">➕</span> Buat Tes
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html" class="nav-item btn-danger">
+          <span class="nav-icon">🚪</span> Keluar
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+      <header class="topbar">
+        <span class="topbar-title">Buat Tes Baru</span>
+      </header>
+
+      <main class="page-body">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="dashboard.html">Dashboard</a>
+          <span class="breadcrumb-sep">›</span>
+          <a href="tests.html">Daftar Tes</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Buat Tes</span>
+        </nav>
+
+        <div class="page-header">
+          <h1>Buat Tes Baru</h1>
+          <p>Isi form di bawah untuk membuat tes baru.</p>
+        </div>
+
+        <div class="create-test-layout">
+
+          <!-- Form -->
+          <section class="card" aria-labelledby="form-heading">
+            <div class="card-header">
+              <h2 class="card-title" id="form-heading">Informasi Tes</h2>
+            </div>
+            <div class="card-body">
+              <form action="#" method="post" novalidate>
+
+                <div class="form-group">
+                  <label class="form-label" for="test-title">Judul Tes <span class="required">*</span></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="test-title"
+                    name="title"
+                    placeholder="Contoh: HTML Basic Test"
+                    required
+                  />
+                  <p class="form-hint">Judul maksimal 100 karakter</p>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="test-description">Deskripsi Tes</label>
+                  <textarea
+                    class="form-control"
+                    id="test-description"
+                    name="description"
+                    rows="4"
+                    placeholder="Tuliskan deskripsi singkat tentang tes ini..."
+                  ></textarea>
+                  <p class="form-hint">Opsional, maksimal 500 karakter</p>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="test-status">Status <span class="required">*</span></label>
+                  <select class="form-control" id="test-status" name="status" required>
+                    <option value="" disabled selected>Pilih status tes</option>
+                    <option value="draft">Draft</option>
+                    <option value="published">Published</option>
+                    <option value="archived">Archived</option>
+                  </select>
+                  <p class="form-hint">
+                    <strong>Draft</strong> — belum bisa dikerjakan menti.
+                    <strong>Published</strong> — sudah bisa dikerjakan.
+                    <strong>Archived</strong> — diarsipkan, tidak aktif.
+                  </p>
+                </div>
+
+                <hr class="section-divider" />
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-lg">💾 Simpan Tes</button>
+                  <a href="tests.html" class="btn btn-outline btn-lg">Batal</a>
+                </div>
+
+              </form>
+            </div>
+          </section>
+
+          <aside>
+            <section class="card" aria-labelledby="tips-heading">
+              <div class="card-header">
+                <h2 class="card-title" id="tips-heading">💡 Tips</h2>
+              </div>
+              <div class="card-body">
+                <ul class="tips-list">
+                  <li class="tips-item">
+                    <span>📝</span>
+                    <span>Simpan sebagai <strong>Draft</strong> jika tes belum siap dipublikasikan.</span>
+                  </li>
+                  <li class="tips-item">
+                    <span>✅</span>
+                    <span>Pilih <strong>Published</strong> agar menti bisa langsung mengerjakan tes.</span>
+                  </li>
+                  <li class="tips-item">
+                    <span>🗂️</span>
+                    <span>Gunakan <strong>Archived</strong> untuk menyimpan tes lama yang tidak aktif.</span>
+                  </li>
+                  <li class="tips-item">
+                    <span>❓</span>
+                    <span>Pastikan setiap soal memiliki jawaban yang benar sebelum dipublikasikan.</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <div class="mt-4">
+              <a href="dashboard.html" class="btn btn-outline btn-block">← Kembali ke Dashboard</a>
+            </div>
+          </aside>
+
+        </div> </main>
+
+      <footer>
+        <span>© 2026 FloTest</span>
+      </footer>
+
+    </div> 
+  </div> 
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Tes — FloTest</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="sidebar" aria-label="Sidebar navigasi">
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <div class="brand-icon">Flo</div>
+          <span class="brand-name">Flo<span>Test</span></span>
+        </div>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar">BS</div>
+        <div class="user-info">
+          <div class="user-name">Budi Santoso</div>
+          <div class="user-role">Mentor</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Menu mentor">
+        <div class="nav-label">Menu</div>
+        <a href="dashboard.html" class="nav-item">
+          <span class="nav-icon">🏠</span> Dashboard
+        </a>
+        <a href="tests.html" class="nav-item active">
+          <span class="nav-icon">📄</span> Daftar Tes
+        </a>
+        <a href="create-test.html" class="nav-item">
+          <span class="nav-icon">➕</span> Buat Tes
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html" class="nav-item btn-danger">
+          <span class="nav-icon">🚪</span> Keluar
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <header class="topbar">
+        <span class="topbar-title">Daftar Tes</span>
+        <div class="topbar-actions">
+          <a href="create-test.html" class="btn btn-primary btn-sm">➕ Buat Tes Baru</a>
+        </div>
+      </header>
+
+      <main class="page-body">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="dashboard.html">Dashboard</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Daftar Tes</span>
+        </nav>
+
+        <div class="page-header">
+          <h1>Daftar Tes</h1>
+          <p>Kelola semua tes yang sudah kamu buat.</p>
+        </div>
+
+        <div class="filter-bar">
+          <select class="form-control filter-select">
+            <option value="">Semua Status</option>
+            <option value="published">Published</option>
+            <option value="draft">Draft</option>
+            <option value="archived">Archived</option>
+          </select>
+          <input
+            class="form-control search-input"
+            type="search"
+            placeholder="Cari judul tes..."
+            aria-label="Cari tes" />
+        </div>
+
+        <section class="card" aria-labelledby="daftar-tes-heading">
+          <div class="card-header">
+            <h2 class="card-title" id="daftar-tes-heading">Semua Tes (3)</h2>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Judul Tes</th>
+                  <th>Status</th>
+                  <th>Jumlah Soal</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>HTML Basic Test</td>
+                  <td>
+                    <span class="badge badge-published">Published</span>
+                  </td>
+                  <td>10</td>
+                  <td>
+                    <div class="action-buttons">
+                      <a href="create-test.html" class="btn btn-outline btn-sm">Edit</a>
+                      <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>CSS Basic Test</td>
+                  <td>
+                    <span class="badge badge-draft">Draft</span>
+                  </td>
+                  <td>8</td>
+                  <td>
+                    <div class="action-buttons">
+                      <a href="create-test.html" class="btn btn-outline btn-sm">Edit</a>
+                      <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Responsive Design Test</td>
+                  <td>
+                    <span class="badge badge-archived">Archived</span>
+                  </td>
+                  <td>15</td>
+                  <td>
+                    <div class="action-buttons">
+                      <a href="create-test.html" class="btn btn-outline btn-sm">Edit</a>
+                      <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="status-summary" aria-labelledby="ringkasan-status-heading">
+          <h2 id="ringkasan-status-heading" class="hidden-heading">Ringkasan Status Tes</h2>
+
+          <article class="summary-card">
+            <div class="summary-label summary-published">Published</div>
+            <div class="summary-value">1</div>
+            <div class="summary-desc">Tes aktif, bisa dikerjakan</div>
+          </article>
+
+          <article class="summary-card">
+            <div class="summary-label summary-draft">Draft</div>
+            <div class="summary-value">1</div>
+            <div class="summary-desc">Belum dipublikasikan</div>
+          </article>
+
+          <article class="summary-card">
+            <div class="summary-label summary-archived">Archived</div>
+            <div class="summary-value">1</div>
+            <div class="summary-desc">Diarsipkan, tidak aktif</div>
+          </article>
+        </section>
+
+        <div class="mt-6">
+          <a href="dashboard.html" class="btn btn-outline">← Kembali ke Dashboard</a>
+        </div>
+
+      </main>
+
+      <footer>
+        <span>© 2026 FloTest</span>
+      </footer>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

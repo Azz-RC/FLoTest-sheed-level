@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin - FloTest</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <div id="dashboard"></div>
+  <div id="mentor"></div>
+  <div id="menti"></div>
+  <div id="tes"></div>
+
+  <div class="app-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <div class="brand-icon">Flo</div>
+          <span class="brand-name">Flo<span>Test</span></span>
+        </div>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar">A</div>
+        <div class="user-info">
+          <div class="user-name">Admin</div>
+          <div class="user-role">Admin</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Menu</div>
+
+        <a href="#dashboard" class="nav-item">
+          <span class="nav-icon">🏠</span>
+          Dashboard
+        </a>
+
+        <a href="#mentor" class="nav-item">
+          <span class="nav-icon">👨‍🏫</span>
+          Mentor
+        </a>
+
+        <a href="#menti" class="nav-item">
+          <span class="nav-icon">👤</span>
+          Menti
+        </a>
+
+        <a href="#tes" class="nav-item">
+          <span class="nav-icon">📄</span>
+          Tes
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html" class="nav-item btn-danger">
+          <span class="nav-icon">🚪</span>
+          Keluar
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <header class="topbar">
+        <span class="topbar-title">Dashboard Admin</span>
+        <div class="topbar-actions">
+          <time datetime="2026-06-15" class="text-muted topbar-date"> Rabu, 17 Juni 2026 </time>
+        </div>
+      </header>
+
+      <main class="page-body">
+
+        <section id="dashboard-section" class="admin-section">
+          <div class="page-header">
+            <h1>Selamat Datang Admin 👋</h1>
+            <p>Pantau seluruh aktivitas FloTest.</p>
+          </div>
+
+          <section aria-labelledby="stats-heading">
+            <h2 id="stats-heading" class="hidden-heading">Statistik</h2>
+            <div class="stats-grid">
+
+              <article class="stat-card">
+                <div class="stat-icon blue">👨‍🏫</div>
+                <div class="stat-info">
+                  <div class="stat-value">2</div>
+                  <div class="stat-label">Total Mentor</div>
+                </div>
+              </article>
+
+              <article class="stat-card">
+                <div class="stat-icon green">👤</div>
+                <div class="stat-info">
+                  <div class="stat-value">5</div>
+                  <div class="stat-label">Total Menti</div>
+                </div>
+              </article>
+
+              <article class="stat-card">
+                <div class="stat-icon orange">📄</div>
+                <div class="stat-info">
+                  <div class="stat-value">3</div>
+                  <div class="stat-label">Total Tes</div>
+                </div>
+              </article>
+
+            </div>
+          </section>
+        </section>
+
+        <section id="mentor-section" class="admin-section">
+          <div class="page-header">
+            <h1>Daftar Mentor</h1>
+            <p>Data mentor FloTest.</p>
+          </div>
+
+          <article class="card">
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Budi Santoso</td>
+                    <td>budi@flotest.id</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Sari Dewi</td>
+                    <td>sari@flotest.id</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section id="menti-section" class="admin-section">
+          <div class="page-header">
+            <h1>Daftar Menti</h1>
+            <p>Data peserta FloTest.</p>
+          </div>
+
+          <article class="card">
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Andi Wijaya</td>
+                    <td>
+                      <span class="badge badge-published">Aktif</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Rina Lestari</td>
+                    <td>
+                      <span class="badge badge-published">Aktif</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Doni Pratama</td>
+                    <td>
+                      <span class="badge badge-draft">Tidak Aktif</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Maya Putri</td>
+                    <td>
+                      <span class="badge badge-published">Aktif</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Reza Firmansyah</td>
+                    <td>
+                      <span class="badge badge-draft">Tidak Aktif</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section id="tes-section" class="admin-section">
+          <div class="page-header">
+            <h1>Daftar Tes</h1>
+            <p>Monitoring seluruh tes.</p>
+          </div>
+
+          <article class="card">
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Judul Tes</th>
+                    <th>Status</th>
+                    <th>Jumlah Soal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HTML Basic Test</td>
+                    <td><span class="badge badge-published">Published</span></td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>CSS Basic Test</td>
+                    <td><span class="badge badge-draft">Draft</span></td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>Responsive Design Test</td>
+                    <td><span class="badge badge-archived">Archived</span></td>
+                    <td>15</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+      </main>
+
+      <footer>
+        <span>© 2026 FloTest</span>
+      </footer>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

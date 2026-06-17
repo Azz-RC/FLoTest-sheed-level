@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - FloTest</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <main class="login-page">
+    <section class="login-container">
+
+      <header class="login-brand">
+        <div class="login-brand-icon">Flo</div>
+        <h1>Flo<span>Test</span></h1>
+        <p>Platform tes online untuk mentor dan menti</p>
+      </header>
+
+      <article class="login-card">
+        <h2>Masuk ke Akun</h2>
+        <p class="subtitle">Silakan isi data login dan pilih salah satu role di bawah ini.</p>
+
+        <form action="#" method="POST" novalidate>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="nama@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Masukkan password">
+          </div>
+
+          <div class="form-group">
+            <label>Pilih Peran Masuk</label>
+            <div class="role-radio-group">
+              <label class="radio-label-box">
+                <input type="radio" name="role_toggle" id="role_admin" checked>
+                <span>Admin</span>
+              </label>
+              <label class="radio-label-box">
+                <input type="radio" name="role_toggle" id="role_mentor">
+                <span>Mentor</span>
+              </label>
+              <label class="radio-label-box">
+                <input type="radio" name="role_toggle" id="role_menti">
+                <span>Menti</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="login-action-container">
+            <a href="admin/dashboard.html" id="submit_admin" class="btn btn-primary btn-block btn-login-target">Login</a>
+            <a href="mentor/dashboard.html" id="submit_mentor" class="btn btn-primary btn-block btn-login-target">Login</a>
+            <a href="menti/dashboard.html" id="submit_menti" class="btn btn-primary btn-block btn-login-target">Login</a>
+          </div>
+
+        </form>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FloTest</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Menti — FloTest</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="sidebar" aria-label="Sidebar navigasi">
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <div class="brand-icon">Flo</div>
+          <span class="brand-name">Flo<span>Test</span></span>
+        </div>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar">AW</div>
+        <div class="user-info">
+          <div class="user-name">Andi Wijaya</div>
+          <div class="user-role">Menti</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Menu menti">
+        <div class="nav-label">Menu</div>
+        <a href="dashboard.html" class="nav-item active">
+          <span class="nav-icon">🏠</span> Dashboard
+        </a>
+        <a href="take-test.html" class="nav-item">
+          <span class="nav-icon">✏️</span> Kerjakan Tes
+        </a>
+        <a href="result.html" class="nav-item">
+          <span class="nav-icon">📊</span> Hasil Tes
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html" class="nav-item btn-danger">
+          <span class="nav-icon">🚪</span> Keluar
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <header class="topbar">
+        <span class="topbar-title">Dashboard Menti</span>
+        <div class="topbar-actions">
+          <a href="take-test.html" class="btn btn-primary btn-sm">✏️ Kerjakan Tes</a>
+        </div>
+      </header>
+
+      <main class="page-body">
+
+        <div class="page-header">
+          <h1>Halo, Andi! 👋</h1>
+          <p>Semangat belajar hari ini. Cek tes yang tersedia untukmu.</p>
+        </div>
+
+        <section aria-labelledby="menti-stats-heading">
+          <h2 id="menti-stats-heading" class="hidden-heading">Ringkasan Menti</h2>
+          
+          <div class="stats-grid">
+            
+            <article class="stat-card">
+              <div class="stat-icon blue">📄</div>
+              <div class="stat-info">
+                <div class="stat-value">1</div>
+                <div class="stat-label">Tes Tersedia</div>
+              </div>
+            </article>
+            
+            <article class="stat-card">
+              <div class="stat-icon green">✅</div>
+              <div class="stat-info">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Tes Selesai</div>
+              </div>
+            </article>
+
+          </div> 
+        </section>
+
+      </main>
+
+      <footer>
+        <span>© 2026 FloTest</span>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>

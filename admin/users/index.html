@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelola Pengguna — Admin FloTest</title>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+    
+    <!-- Sidebar Navigasi -->
+    <aside class="sidebar" aria-label="Sidebar navigasi">
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <div class="brand-icon">Flo</div>
+          <span class="brand-name">Flo<span>Test</span></span>
+        </div>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="user-avatar">ADM</div>
+        <div class="user-info">
+          <div class="user-name">Super Admin</div>
+          <div class="user-role">Admin System</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Menu admin">
+        <div class="nav-label">Main Menu</div>
+        <a href="../dashboard.html" class="nav-item">
+          <span class="nav-icon">🏠</span> Dashboard
+        </a>
+        <a href="index.html" class="nav-item active">
+          <span class="nav-icon">👥</span> Kelola Users
+        </a>
+        <a href="../tests/index.html" class="nav-item">
+          <span class="nav-icon">📝</span> Kelola Tes
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../../index.html" class="nav-item btn-danger">
+          <span class="nav-icon">🚪</span> Keluar
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      
+      <header class="topbar">
+        <span class="topbar-title">Daftar Pengguna</span>
+        <div class="topbar-actions">
+          <a href="create.html" class="btn btn-primary btn-sm">➕ Tambah User</a>
+        </div>
+      </header>
+
+      <main class="page-body">
+        
+        <!-- Breadcrumb Navigasi -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../dashboard.html">Dashboard</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Users</span>
+        </nav>
+
+        <div class="page-header">
+          <h1>Kelola Data Pengguna</h1>
+          <p>Daftar seluruh akun terdaftar di sistem FloTest (2 Mentor dan 5 Menti).</p>
+        </div>
+
+        <!-- Tabel Data Pengguna -->
+        <section class="card">
+          <div class="card-header">
+            <h2 class="card-title">Total Anggota Terintegrasi</h2>
+          </div>
+          <div class="card-body">
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <!-- === DATA MENTOR (2 Akun) === -->
+                  <tr>
+                    <td>Budi Setiawan, M.Kom</td>
+                    <td>budi.mentor@mail.com</td>
+                    <td><span class="badge badge-published" style="background-color: #EEF2FF; color: #4F46E5;">Mentor</span></td>
+                    <td>
+                      <div class="action-buttons">
+                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Siti Rahma, S.T</td>
+                    <td>siti.mentor@mail.com</td>
+                    <td><span class="badge badge-published" style="background-color: #EEF2FF; color: #4F46E5;">Mentor</span></td>
+                    <td>
+                      <div class="action-buttons">
+                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- === DATA MENTI (5 Akun) === -->
+                  <tr>
+                    <td>Andi Wijaya</td>
+                    <td>andi@mail.com</td>
+                    <td><span class="badge badge-draft" style="background-color: #FFF7ED; color: #D97706;">Menti</span></td>
+                    <td>
+                      <div class="action-buttons">
+                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Rian Hidayat</td>
+                    <td>rian.menti@mail.com</td>
+                    <td><span class="badge badge-draft" style="background-color: #FFF7ED; color: #D97706;">Menti</span></td>
+                    <td>
+                      <div class="action-buttons">
+                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Citra Lestari</td>
+                    <td>citra.menti@mail.com</td>
+                    <td><span class="badge badge-draft" style="background-color: #FFF7ED; color: #D97706;">Menti</span></td>
+                    <td>
+                      <div class="action-buttons">
+                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Dewi Anggraini</td>
+                    <td>dewi.menti@mail.com</td>
+                    <td><span class="badge badge-draft" style="background-color: #FFF7ED; color: #D97706;">Menti</span></td>
+                    <td>
+                      <div class="action-buttons">
+                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Eko Prasetyo</td>
+                    <td>eko.menti@mail.com</td>
+                    <td><span class="badge badge-draft" style="background-color: #FFF7ED; color: #D97706;">Menti</span></td>
+                    <td>
+                      <div class="action-buttons">
+                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <span>© 2026 FloTest — Panel Administrasi Super</span>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>

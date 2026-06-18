@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelola Tes — Admin</title>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand"><div class="brand-logo"><div class="brand-icon">Flo</div><span class="brand-name">Flo<span>Test</span></span></div></div>
+      <nav class="sidebar-nav">
+        <a href="../dashboard.html" class="nav-item">🏠 Dashboard</a>
+        <a href="../users/index.html" class="nav-item">👥 Kelola Users</a>
+        <a href="index.html" class="nav-item active">📝 Kelola Tes</a>
+      </nav>
+    </aside>
+
+    <div class="main-content">
+      <header class="topbar">
+        <span class="topbar-title">Master Data Tes</span>
+        <a href="create.html" class="btn btn-primary btn-sm">➕ Tambah Tes</a>
+      </header>
+      <main class="page-body">
+        <section class="card">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nama Tes</th>
+                  <th>Status</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML Basic Test</td>
+                  <td><span class="badge badge-published">Published</span></td>
+                  <td class="action-buttons">
+                    <a href="questions/index.html" class="btn btn-outline btn-sm">👁️ Kelola Soal</a>
+                    <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>

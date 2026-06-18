@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Soal — FloTest</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-logo"><div class="brand-icon">Flo</div><span class="brand-name">Flo<span>Test</span></span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="../../dashboard.html" class="nav-item">🏠 Dashboard</a>
+        <a href="../index.html" class="nav-item active">📝 Kelola Tes</a>
+      </nav>
+    </aside>
+
+    <div class="main-content">
+      <header class="topbar"><span class="topbar-title">Edit Soal</span></header>
+      
+      <main class="page-body">
+        <nav class="breadcrumb">
+          <a href="../../dashboard.html">Dashboard</a> / 
+          <a href="../index.html">Kelola Tes</a> / 
+          <a href="index.html">Daftar Soal</a> / 
+          <span>Edit Soal</span>
+        </nav>
+
+        <section class="card">
+          <div class="card-body">
+            <form action="index.html" method="get">
+              
+              <div class="form-group">
+                <label class="form-label">Pertanyaan <span class="required">*</span></label>
+                <textarea class="form-control" required>Apa fungsi HTML?</textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Pilihan Jawaban <span class="required">*</span></label>
+                <div class="option-grid">
+                  <div class="option-group">
+                    <input type="text" class="form-control" value="HyperText Markup Language — bahasa untuk membuat struktur dan konten halaman web" required />
+                  </div>
+                  <div class="option-group">
+                    <input type="text" class="form-control" value="Bahasa pemrograman untuk membuat logika dan kalkulasi" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                <a href="index.html" class="btn btn-outline">Batal</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>

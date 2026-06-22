@@ -3,129 +3,266 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kelola Soal — Admin FloTest</title>
+  <title>Kelola Questions — FloTest SMK</title>
   <link rel="stylesheet" href="../../../assets/css/style.css" />
 </head>
+
 <body>
 
-  <div class="app-layout">
-    
-    <aside class="sidebar" aria-label="Sidebar navigasi">
-      <div class="sidebar-brand">
-        <div class="brand-logo">
-          <div class="brand-icon">Flo</div>
-          <span class="brand-name">Flo<span>Test</span></span>
-        </div>
+<div class="app-layout">
+
+  <aside class="sidebar">
+
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">Flo</div>
+        <span class="brand-name">Flo<span>Test</span></span>
       </div>
-
-      <div class="sidebar-user">
-        <div class="user-avatar">ADM</div>
-        <div class="user-info">
-          <div class="user-name">Super Admin</div>
-          <div class="user-role">Admin System</div>
-        </div>
-      </div>
-
-      <nav class="sidebar-nav" aria-label="Menu admin">
-        <div class="nav-label">Main Menu</div>
-        <a href="../../dashboard.html" class="nav-item">
-          <span class="nav-icon">🏠</span> Dashboard
-        </a>
-        <a href="../../users/index.html" class="nav-item">
-          <span class="nav-icon">👥</span> Kelola Users
-        </a>
-        <a href="../index.html" class="nav-item active">
-          <span class="nav-icon">📝</span> Kelola Tes
-        </a>
-      </nav>
-
-      <div class="sidebar-footer">
-        <a href="../../../index.html" class="nav-item btn-danger">
-          <span class="nav-icon">🚪</span> Keluar
-        </a>
-      </div>
-    </aside>
-
-    <div class="main-content">
-      
-      <header class="topbar">
-        <span class="topbar-title">Master Data Soal: <strong class="text-primary">HTML Basic Test</strong></span>
-        <div class="topbar-actions">
-          <a href="create.html" class="btn btn-primary btn-sm">➕ Tambah Soal Master</a>
-        </div>
-      </header>
-
-      <main class="page-body">
-        
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../../dashboard.html">Dashboard</a>
-          <span class="breadcrumb-sep">›</span>
-          <a href="../index.html">Kelola Tes</a>
-          <span class="breadcrumb-sep">›</span>
-          <span>Bank Soal Master</span>
-        </nav>
-
-        <div class="page-header">
-          <h1>Daftar Bank Soal Sistem</h1>
-          <p>Halaman kontrol penuh untuk memodifikasi soal ujian yang didistribusikan ke mentor dan menti.</p>
-        </div>
-
-        <section class="card">
-          <div class="card-header">
-            <h2 class="card-title">Kumpulan Soal Aktif (1 Soal Tersedia)</h2>
-          </div>
-          <div class="card-body">
-            
-            <div class="question-card">
-              <div class="question-header">
-                <span class="question-number">Soal Master #1</span>
-                <div class="action-buttons">
-                  <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
-                  <button type="button" class="btn btn-danger btn-sm" style="background-color: #FEF2F2; padding: 6px 10px;">🗑️ Hapus</button>
-                </div>
-              </div>
-              
-              <p class="question-text">Elemen HTML yang digunakan untuk membuat baris baru (line break) adalah...</p>
-              
-              <div class="option-grid">
-                <div class="option-group">
-                  <div class="option-item" style="border-color: var(--color-success); background-color: #ECFDF5; cursor: default;">
-                    <span class="answer-status answer-correct">✓ Opsi A:</span>
-                    <span class="option-label" style="margin-left: 8px; font-weight: 600;">&lt;br&gt; (Kunci Jawaban)</span>
-                  </div>
-                </div>
-                <div class="option-group">
-                  <div class="option-item" style="cursor: default;">
-                    <span class="answer-status answer-incorrect">✕ Opsi B:</span>
-                    <span class="option-label" style="margin-left: 8px;">&lt;lb&gt;</span>
-                  </div>
-                </div>
-                <div class="option-group">
-                  <div class="option-item" style="cursor: default;">
-                    <span class="answer-status answer-incorrect">✕ Opsi C:</span>
-                    <span class="option-label" style="margin-left: 8px;">&lt;break&gt;</span>
-                  </div>
-                </div>
-                <div class="option-group">
-                  <div class="option-item" style="cursor: default;">
-                    <span class="answer-status answer-incorrect">✕ Opsi D:</span>
-                    <span class="option-label" style="margin-left: 8px;">&lt;p&gt;</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-      </main>
-
-      <footer>
-        <span>© 2026 FloTest — Panel Administrasi Super</span>
-      </footer>
-
     </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">ADM</div>
+
+      <div class="user-info">
+        <div class="user-name">Super Admin</div>
+        <div class="user-role">Admin</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <div class="nav-label">Navigasi</div>
+
+      <a href="../index.html" class="nav-item">
+        ⬅️ Kembali ke Daftar Tests
+      </a>
+
+      <a href="index.html" class="nav-item active">
+        ❓ Kelola Questions
+      </a>
+
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="../../../index.html" class="nav-item btn-danger nav-center">
+        🚪 Logout
+      </a>
+    </div>
+
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+      <span class="topbar-title">
+        Panel Admin / Manajemen Bank Soal
+      </span>
+    </header>
+
+    <main class="page-body">
+
+      <section class="page-header page-header-flex">
+
+        <div>
+
+          <h1>
+            ❓ Questions List:
+            <span class="text-primary">
+              HTML Basic Test
+            </span>
+          </h1>
+
+          <p>
+            Mengelola item pertanyaan pilihan ganda
+            untuk paket evaluasi ujian terpilih.
+          </p>
+
+        </div>
+
+        <a href="create.html" class="btn btn-primary">
+          + Tambah Soal
+        </a>
+
+      </section>
+
+      <section class="card">
+
+        <h3 class="section-title">
+          Daftar Soal Pilihan Ganda
+        </h3>
+
+        <div class="table-wrapper">
+
+          <table class="data-table">
+
+            <thead>
+
+              <tr>
+                <th class="col-number">NO</th>
+                <th>QUESTION TEXT</th>
+                <th class="col-type">TYPE</th>
+                <th class="col-action">ACTIONS</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr>
+
+                <td class="table-number">
+                  1
+                </td>
+
+                <td>
+
+                  <strong>
+                    Tag HTML manakah yang digunakan untuk membuat judul terbesar?
+                  </strong>
+
+                  <div class="table-note">
+                    Kunci: A. &lt;h1&gt;
+                  </div>
+
+                </td>
+
+                <td>
+
+                  <span class="badge badge-secondary">
+                    Pilihan Ganda
+                  </span>
+
+                </td>
+
+                <td class="table-actions">
+
+                  <a href="edit.html" class="action-edit">
+                    📝 Edit
+                  </a>
+
+                  <a href="#"
+                     class="action-delete"
+                     onclick="confirm('Hapus butir soal nomor 1?') && alert('Soal dummy berhasil dihapus')">
+
+                    🗑️ Delete
+
+                  </a>
+
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="table-number">
+                  2
+                </td>
+
+                <td>
+
+                  <strong>
+                    Karakter apa yang digunakan untuk mengindikasikan tag penutup dalam HTML?
+                  </strong>
+
+                  <div class="table-note">
+                    Kunci: C. /
+                  </div>
+
+                </td>
+
+                <td>
+
+                  <span class="badge badge-secondary">
+                    Pilihan Ganda
+                  </span>
+
+                </td>
+
+                <td class="table-actions">
+
+                  <a href="edit.html" class="action-edit">
+                    📝 Edit
+                  </a>
+
+                  <a href="#"
+                     class="action-delete"
+                     onclick="confirm('Hapus butir soal nomor 2?') && alert('Soal dummy berhasil dihapus')">
+
+                    🗑️ Delete
+
+                  </a>
+
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td class="table-number">
+                  3
+                </td>
+
+                <td>
+
+                  <strong>
+                    Elemen HTML yang benar untuk membuat baris baru (line break) adalah...
+                  </strong>
+
+                  <div class="table-note">
+                    Kunci: B. &lt;br&gt;
+                  </div>
+
+                </td>
+
+                <td>
+
+                  <span class="badge badge-secondary">
+                    Pilihan Ganda
+                  </span>
+
+                </td>
+
+                <td class="table-actions">
+
+                  <a href="edit.html" class="action-edit">
+                    📝 Edit
+                  </a>
+
+                  <a href="#"
+                     class="action-delete"
+                     onclick="confirm('Hapus butir soal nomor 3?') && alert('Soal dummy berhasil dihapus')">
+
+                    🗑️ Delete
+
+                  </a>
+
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+        <p class="table-info">
+          *Catatan: Menampilkan 3 baris sampel dari representasi data dummy berkas kelayakan ujian.
+        </p>
+
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <span>
+        © 2026 FloTest — Panel Evaluasi Soal
+      </span>
+    </footer>
+
   </div>
+
+</div>
 
 </body>
 </html>

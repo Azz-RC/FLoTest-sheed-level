@@ -3,32 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buat Tes Baru — Admin</title>
+  <title>Buat Paket Ujian Baru — FloTest SMK</title>
   <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
+
 <body>
 
-  <div class="app-layout">
-    <aside class="sidebar"><nav class="sidebar-nav"><a href="index.html" class="nav-item active">📝 Kelola Tes</a></nav></aside>
-    <div class="main-content">
-      <main class="page-body">
-        <section class="card">
-          <div class="card-body">
-            <form action="index.html" method="get">
-              <div class="form-group">
-                <label class="form-label">Judul Ujian Baru <span class="required">*</span></label>
-                <input type="text" class="form-control" placeholder="Contoh: CSS Layouting Advanced" required />
-              </div>
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Buat & Lanjutkan</button>
-                <a href="index.html" class="btn btn-outline">Batal</a>
-              </div>
-            </form>
-          </div>
-        </section>
-      </main>
+<div class="app-layout">
+
+  <aside class="sidebar">
+
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">Flo</div>
+        <span class="brand-name">
+          Flo<span>Test</span>
+        </span>
+      </div>
     </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-label">Navigasi</div>
+
+      <a href="../dashboard.html" class="nav-item">
+        🏠 Dashboard Admin
+      </a>
+
+      <a href="index.html" class="nav-item">
+        ⬅️ Kembali ke Daftar Tests
+      </a>
+    </nav>
+
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+      <span class="topbar-title">
+        Panel Admin / Tambah Ujian Baru
+      </span>
+    </header>
+
+    <main class="page-body">
+
+      <section class="page-header">
+        <h1>➕ Halaman Create Test Form</h1>
+
+        <p>
+          Rancang paket ujian atau kelompok kuis baru
+          untuk menguji kompetensi menti.
+        </p>
+      </section>
+
+      <section class="card card-form">
+
+        <form
+          action="index.html"
+          method="GET"
+          onsubmit="alert('Data dummy ujian berhasil ditambahkan ke sistem!');">
+
+          <div class="form-group">
+
+            <label for="title" class="form-label">
+              Judul Paket Ujian (Title)
+            </label>
+
+            <input
+              id="title"
+              type="text"
+              class="form-input"
+              placeholder="Contoh: JavaScript DOM Manipulation"
+              required
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="description" class="form-label">
+              Deskripsi / Petunjuk Ujian
+            </label>
+
+            <textarea
+              id="description"
+              class="form-input"
+              rows="4"
+              placeholder="Tulis instruksi pengerjaan, durasi, KKM, atau materi cakupan ujian..."></textarea>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="mentor" class="form-label">
+              Penanggung Jawab / Pembuat Soal (Mentor)
+            </label>
+
+            <select
+              id="mentor"
+              class="form-input"
+              required>
+
+              <option value="">
+                -- Pilih Mentor Guru --
+              </option>
+
+              <option value="Budi Setiawan, M.Kom">
+                Budi Setiawan, M.Kom
+              </option>
+
+              <option value="Siti Rahma, S.T">
+                Siti Rahma, S.T
+              </option>
+
+            </select>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="status" class="form-label">
+              Status Penerbitan Paket
+            </label>
+
+            <select
+              id="status"
+              class="form-input"
+              required>
+
+              <option value="Draft">
+                Draft
+              </option>
+
+              <option value="Published">
+                Published (Rilis)
+              </option>
+
+              <option value="Archived">
+                Archived (Arsip)
+              </option>
+
+            </select>
+
+          </div>
+
+          <nav class="form-actions">
+
+            <button
+              type="submit"
+              class="btn btn-primary">
+              Simpan Paket Ujian
+            </button>
+
+            <a
+              href="index.html"
+              class="btn btn-secondary">
+              Batalkan
+            </a>
+
+          </nav>
+
+        </form>
+
+      </section>
+
+    </main>
+
   </div>
+
+</div>
 
 </body>
 </html>

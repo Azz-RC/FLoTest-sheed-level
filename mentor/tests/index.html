@@ -3,140 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kelola Tes — Mentor FloTest</title>
-  <!-- Karena berada di mentor/tests/index.html, mundur 2 tingkat ke folder assets -->
+  <title>Daftar Tes — Mentor FloTest</title>
   <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 <body>
 
-  <div class="app-layout">
-    
-    <!-- Sidebar Navigasi Mentor -->
-    <aside class="sidebar" aria-label="Sidebar navigasi">
-      <div class="sidebar-brand">
-        <div class="brand-logo">
-          <div class="brand-icon">Flo</div>
-          <span class="brand-name">Flo<span>Test</span></span>
-        </div>
+<div class="app-layout">
+
+  <aside class="sidebar" aria-label="Sidebar mentor">
+
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">Flo</div>
+        <span class="brand-name">Flo<span>Test</span></span>
       </div>
-
-      <div class="sidebar-user">
-        <div class="user-avatar" style="background-color: var(--color-primary); color: white;">BS</div>
-        <div class="user-info">
-          <div class="user-name">Budi Santoso</div>
-          <div class="user-role">Mentor</div>
-        </div>
-      </div>
-
-      <nav class="sidebar-nav" aria-label="Menu mentor">
-        <div class="nav-label">Menu</div>
-        <a href="../dashboard.html" class="nav-item">
-          <span class="nav-icon">🏠</span> Dashboard
-        </a>
-        <a href="index.html" class="nav-item active">
-          <span class="nav-icon">📝</span> Kelola Tes
-        </a>
-      </nav>
-
-      <div class="sidebar-footer">
-        <a href="../../index.html" class="nav-item btn-danger" style="color: var(--color-danger);">
-          <span class="nav-icon">🚪</span> Keluar
-        </a>
-      </div>
-    </aside>
-
-    <!-- Main Content Area -->
-    <div class="main-content">
-      
-      <header class="topbar">
-        <span class="topbar-title">Daftar Tes</span>
-        <div class="topbar-actions">
-          <a href="create.html" class="btn btn-primary btn-sm">➕ Tambah Tes</a>
-        </div>
-      </header>
-
-      <main class="page-body">
-        
-        <!-- Breadcrumb Navigasi -->
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../dashboard.html">Dashboard</a>
-          <span class="breadcrumb-sep">›</span>
-          <span>Kelola Tes</span>
-        </nav>
-
-        <!-- Tabel Kontrol Tes Ujian -->
-        <section class="card">
-          <div class="card-header">
-            <h2 class="card-title">Daftar Tes Ujian</h2>
-          </div>
-          <div class="card-body">
-            <div class="table-wrapper">
-              <table>
-                <thead>
-                  <tr>
-                    <th>NAMA TES</th>
-                    <th>JUMLAH SOAL</th>
-                    <th>STATUS</th>
-                    <th>AKSI</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  
-                  <!-- 1. Status: Published (Sesuai gambar bawaan) -->
-                  <tr>
-                    <td>HTML Basic Test</td>
-                    <td>10 Soal</td>
-                    <td>
-                      <span class="badge badge-published" style="background-color: #ECFDF5; color: var(--color-success);">Published</span>
-                    </td>
-                    <td>
-                      <div class="action-buttons">
-                        <a href="questions/index.html" class="btn btn-outline btn-sm">👁️ Lihat Soal</a>
-                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <!-- 2. Status Baru: Draft (Warna Kuning/Oranye) -->
-                  <tr>
-                    <td>CSS Layouting & Flexbox</td>
-                    <td>15 Soal</td>
-                    <td>
-                      <span class="badge badge-draft" style="background-color: #FFF7ED; color: #D97706;">Draft</span>
-                    </td>
-                    <td>
-                      <div class="action-buttons">
-                        <a href="questions/index.html" class="btn btn-outline btn-sm">👁️ Lihat Soal</a>
-                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <!-- 3. Status Baru: Archived (Warna Abu-abu) -->
-                  <tr>
-                    <td>JavaScript Fundamental Quiz</td>
-                    <td>20 Soal</td>
-                    <td>
-                      <span class="badge" style="background-color: #F3F4F6; color: #4B5563;">Archived</span>
-                    </td>
-                    <td>
-                      <div class="action-buttons">
-                        <a href="questions/index.html" class="btn btn-outline btn-sm" style="opacity: 0.6; pointer-events: none; cursor: not-allowed;">👁️ Lihat Soal</a>
-                        <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
-                      </div>
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-
-      </main>
-
     </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">BS</div>
+
+      <div class="user-info">
+        <div class="user-name">Budi Santoso</div>
+        <div class="user-role">Mentor</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Menu Mentor">
+
+      <div class="nav-label">Menu</div>
+
+      <a href="../dashboard.html" class="nav-item">
+        <span class="nav-icon">⬅️</span>
+        Kembali ke Dashboard
+      </a>
+
+      <a href="index.html" class="nav-item active">
+        <span class="nav-icon">📝</span>
+        Menu Tests
+      </a>
+
+      <a href="create.html" class="nav-item">
+        <span class="nav-icon">➕</span>
+        Create Test
+      </a>
+
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="../../index.html" class="nav-item btn-danger">
+        🚪 Keluar
+      </a>
+    </div>
+
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+      <span class="topbar-title">Manajemen Ujian Mentor</span>
+    </header>
+
+    <main class="page-body">
+
+      <section class="page-header page-header-flex">
+
+        <div>
+          <h1>Daftar Paket Tes Anda</h1>
+
+          <p>
+            Mengelola seluruh simulasi ujian statis yang telah Anda publikasikan
+            atau simpan.
+          </p>
+        </div>
+
+        <a href="create.html" class="btn btn-primary">
+          + Tambah Tes
+        </a>
+
+      </section>
+
+      <section class="card">
+
+        <div class="table-wrapper">
+
+          <table class="data-table">
+
+            <thead>
+
+              <tr>
+                <th>TITLE</th>
+                <th>STATUS</th>
+                <th>QUESTIONS COUNT</th>
+                <th>ACTIONS</th>
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr>
+
+                <td class="table-title">
+                  HTML Basic Test
+                </td>
+
+                <td>
+                  <span class="status published">
+                    Published
+                  </span>
+                </td>
+
+                <td>10 Soal</td>
+
+                <td class="table-actions">
+
+                  <a href="questions/index.html" class="action-link view">
+                    👁️ View Questions
+                  </a>
+
+                  <a href="edit.html" class="action-link edit">
+                    📝 Edit
+                  </a>
+
+                  <a href="index.html" class="action-link delete">
+                    🗑️ Delete
+                  </a>
+
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>&copy; 2026 FloTest</p>
+    </footer>
+
   </div>
+
+</div>
 
 </body>
 </html>

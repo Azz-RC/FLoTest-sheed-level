@@ -1,55 +1,206 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kelola Soal — FloTest</title>
-  <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Soal — Mentor FloTest</title>
+
+    <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 <body>
 
-  <div class="app-layout">
-    <aside class="sidebar">
-      <div class="sidebar-brand"><div class="brand-logo"><div class="brand-icon">Flo</div><span class="brand-name">Flo<span>Test</span></span></div></div>
-      <nav class="sidebar-nav">
-        <a href="../../dashboard.html" class="nav-item">🏠 Dashboard</a>
-        <a href="../index.html" class="nav-item active">📝 Kelola Tes</a>
-      </nav>
-    </aside>
+<div class="app-layout">
 
-    <div class="main-content">
-      <header class="topbar">
-        <span class="topbar-title">Soal: HTML Basic Test</span>
-        <a href="create.html" class="btn btn-primary btn-sm">➕ Tambah Soal</a>
-      </header>
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Sidebar Mentor">
 
-      <main class="page-body">
-        <nav class="breadcrumb">
-          <a href="../../dashboard.html">Dashboard</a> / 
-          <a href="../index.html">Kelola Tes</a> / 
-          <span>Daftar Soal</span>
+        <div class="sidebar-brand">
+            <div class="brand-logo">
+                <div class="brand-icon">Flo</div>
+                <span class="brand-name">Flo<span>Test</span></span>
+            </div>
+        </div>
+
+        <div class="sidebar-user">
+            <div class="user-avatar">BS</div>
+
+            <div class="user-info">
+                <div class="user-name">Budi Santoso</div>
+                <div class="user-role">Mentor</div>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Menu Mentor">
+
+            <div class="nav-label">Menu</div>
+
+            <a href="../../dashboard.html" class="nav-item">
+                <span class="nav-icon">⬅️</span>
+                Dashboard
+            </a>
+
+            <a href="../index.html" class="nav-item active">
+                <span class="nav-icon">📝</span>
+                Menu Tests
+            </a>
+
+            <a href="../create.html" class="nav-item">
+                <span class="nav-icon">➕</span>
+                Create Test
+            </a>
+
         </nav>
 
-        <section class="card">
-          <div class="card-body">
-            <div class="question-card">
-              <div class="question-header">
-                <span class="question-number">Soal 1</span>
+        <div class="sidebar-footer">
+            <a href="../../../index.html" class="nav-item btn-danger">
+                🚪 Keluar
+            </a>
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+    <div class="main-content">
+
+        <header class="topbar">
+
+            <span class="topbar-title">
+                Bank Soal Ujian
+            </span>
+
+            <a href="../index.html" class="btn btn-secondary btn-sm">
+                ⬅️ Kembali ke Daftar Tes
+            </a>
+
+        </header>
+
+        <main class="page-body">
+
+            <section class="page-header question-header">
+
                 <div>
-                  <a href="edit.html" class="btn btn-outline btn-sm">✏️ Edit</a>
+
+                    <span class="test-label">
+                        Paket Ujian: HTML Basic Test
+                    </span>
+
+                    <h1>Kelola Butir Soal</h1>
+
+                    <p>
+                        Berikut adalah daftar pertanyaan pilihan ganda
+                        yang terdaftar pada ujian ini.
+                    </p>
+
                 </div>
-              </div>
-              <p class="question-text">Apa fungsi HTML?</p>
-              <div class="option-list">
-                <div class="option-label"><strong>A. (Benar)</strong> HyperText Markup Language — struktur web</div>
-                <div class="option-label">B. Bahasa Pemrograman Logika</div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+
+                <a href="create.html" class="btn btn-primary">
+                    + Tambah Soal
+                </a>
+
+            </section>
+
+            <section class="card question-card">
+
+                <div class="table-wrapper">
+
+                    <table class="question-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>NUMBER</th>
+                                <th>QUESTION TEXT</th>
+                                <th>ACTIONS</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td class="question-number">
+                                    1
+                                </td>
+
+                                <td>
+
+                                    <div class="question-title">
+                                        Apa singkatan dari HTML?
+                                    </div>
+
+                                    <div class="answer-key">
+                                        Kunci Jawaban:
+                                        <strong>A</strong>
+                                    </div>
+
+                                </td>
+
+                                <td>
+
+                                    <a href="edit.html" class="action-edit">
+                                        📝 Edit
+                                    </a>
+
+                                    <a href="index.html" class="action-delete">
+                                        🗑️ Delete
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="question-number">
+                                    2
+                                </td>
+
+                                <td>
+
+                                    <div class="question-title">
+                                        Tag manakah yang digunakan untuk membuat
+                                        baris baru dalam teks HTML?
+                                    </div>
+
+                                    <div class="answer-key">
+                                        Kunci Jawaban:
+                                        <strong>C</strong>
+                                    </div>
+
+                                </td>
+
+                                <td>
+
+                                    <a href="edit.html" class="action-edit">
+                                        📝 Edit
+                                    </a>
+
+                                    <a href="index.html" class="action-delete">
+                                        🗑️ Delete
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="page-footer">
+            <span>© 2026 FloTest</span>
+        </footer>
+
     </div>
-  </div>
+
+</div>
 
 </body>
 </html>

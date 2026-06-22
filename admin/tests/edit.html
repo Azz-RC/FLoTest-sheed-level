@@ -3,32 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edit Judul Tes — Admin</title>
+  <title>Edit Paket Ujian — FloTest SMK</title>
   <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
+
 <body>
 
-  <div class="app-layout">
-    <aside class="sidebar"><nav class="sidebar-nav"><a href="index.html" class="nav-item active">📝 Kelola Tes</a></nav></aside>
-    <div class="main-content">
-      <main class="page-body">
-        <section class="card">
-          <div class="card-body">
-            <form action="index.html" method="get">
-              <div class="form-group">
-                <label class="form-label">Judul Ujian <span class="required">*</span></label>
-                <input type="text" class="form-control" value="HTML Basic Test" required />
-              </div>
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Simpan</button>
-                <a href="index.html" class="btn btn-outline">Batal</a>
-              </div>
-            </form>
-          </div>
-        </section>
-      </main>
+<div class="app-layout">
+
+  <aside class="sidebar">
+
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">Flo</div>
+        <span class="brand-name">
+          Flo<span>Test</span>
+        </span>
+      </div>
     </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-label">Navigasi</div>
+
+      <a href="../dashboard.html" class="nav-item">
+        🏠 Dashboard Admin
+      </a>
+
+      <a href="index.html" class="nav-item">
+        ⬅️ Kembali ke Daftar Tests
+      </a>
+    </nav>
+
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+      <span class="topbar-title">
+        Panel Admin / Edit Paket Ujian
+      </span>
+    </header>
+
+    <main class="page-body">
+
+      <section class="page-header">
+        <h1>📝 Halaman Edit Test Form</h1>
+
+        <p>
+          Sesuaikan ulang konfigurasi, judul, atau status publikasi
+          dari paket tes terpilih.
+        </p>
+      </section>
+
+      <section class="card card-form">
+
+        <form
+          action="index.html"
+          method="GET"
+          onsubmit="alert('Perubahan paket ujian berhasil disimpan secara lokal!');">
+
+          <div class="form-group">
+
+            <label for="title" class="form-label">
+              Ubah Judul Ujian
+            </label>
+
+            <input
+              id="title"
+              type="text"
+              class="form-input"
+              value="HTML Basic Test"
+              required
+            />
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="description" class="form-label">
+              Ubah Deskripsi / Petunjuk
+            </label>
+
+            <textarea
+              id="description"
+              class="form-input"
+              rows="4">Ujian tingkat dasar ini mencakup pengenalan tag HTML5, elemen semantik, pembuatan tabel, formulir input, beserta penataan struktur dokumen web standar dasar.</textarea>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="mentor" class="form-label">
+              Ubah Mentor Penanggung Jawab
+            </label>
+
+            <select
+              id="mentor"
+              class="form-input"
+              required>
+
+              <option selected>
+                Budi Setiawan, M.Kom
+              </option>
+
+              <option>
+                Siti Rahma, S.T
+              </option>
+
+            </select>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="status" class="form-label">
+              Ubah Status Paket
+            </label>
+
+            <select
+              id="status"
+              class="form-input"
+              required>
+
+              <option>Draft</option>
+
+              <option selected>
+                Published (Rilis)
+              </option>
+
+              <option>
+                Archived (Arsip)
+              </option>
+
+            </select>
+
+          </div>
+
+          <nav class="form-actions">
+
+            <button
+              type="submit"
+              class="btn btn-warning">
+              Update Paket Ujian
+            </button>
+
+            <a
+              href="index.html"
+              class="btn btn-secondary">
+              Batalkan
+            </a>
+
+          </nav>
+
+        </form>
+
+      </section>
+
+    </main>
+
   </div>
+
+</div>
 
 </body>
 </html>

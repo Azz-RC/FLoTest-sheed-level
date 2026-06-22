@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500&display=swap');
 
 /* ==========================================================================
-   1. RESET (Menghapus & menyamakan pengaturan bawaan berbagai browser)
+   1. RESET 
    ========================================================================== */
 *, 
 *::before, 
@@ -560,20 +560,25 @@ tbody tr:hover {
   font-family: var(--font-display); 
 }
 
-.badge-published { 
-  background-color: #ECFDF5; 
-  color: #059669; 
-}
+/* Layout & Spacing */
+.app-layout { display: flex; min-height: 100vh; }
+.main-content { flex: 1; padding: 2rem; }
+.card { background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #e2e8f0; }
+.form-group { margin-bottom: 1rem; }
+.form-control { width: 100%; padding: 0.5rem; border: 1px solid #cbd5e1; border-radius: 4px; }
 
-.badge-draft { 
-  background-color: #FFF7ED; 
-  color: #D97706; 
-}
+/* Buttons & Badges */
+.btn { padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; text-decoration: none; display: inline-block; }
+.btn-primary { background: #4f46e5; color: white; }
+.btn-outline { border: 1px solid #cbd5e1; color: #475569; }
+.badge { padding: 0.25rem 0.5rem; border-radius: 99px; font-size: 0.75rem; }
+.badge-admin { background: #fee2e2; color: #991b1b; }
+.badge-mentor { background: #e0e7ff; color: #4f46e5; }
+.badge-menti { background: #fef3c7; color: #d97706; }
 
-.badge-archived { 
-  background-color: #F1F5F9; 
-  color: #64748B; 
-}
+.badge-draft { background: #fef3c7; color: #d97706; }
+.badge-published { background: #dcfce7; color: #166534; }
+.badge-archived { background: #f3f4f6; color: #374151; }
 
 /* --- Forms UI --- */
 .form-group { 
@@ -901,6 +906,18 @@ select.form-control {
 .demo-table a:hover { 
   opacity: 0.8; 
 }
+
+/* Tambahkan di bagian Section 4 */
+.flex { display: flex; }
+.justify-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.gap-4 { gap: 1rem; }
+.text-danger { color: var(--color-danger); }
+
+/* Badge Peran */
+.badge-admin { background-color: #FEE2E2; color: #991B1B; } 
+.badge-mentor { background-color: #E0E7FF; color: #4F46E5; }
+.badge-menti { background-color: #FEF3C7; color: #D97706; }
 
 
 /* ==========================================================================
@@ -1240,4 +1257,1130 @@ body:has(#role_mentor:checked) #submit_mentor {
 }
 body:has(#role_menti:checked) #submit_menti {
   display: block !important;
+}
+
+/* ==========================================================================
+   6. TAMBAHAN FIXES (Polesan Detail Login & Dashboard)
+   ========================================================================== */
+
+.login-card form .form-group + .section-divider {
+  margin: 24px 0 16px 0;
+}
+
+.login-action-container p.form-label {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+/* Memperbaiki kontras tombol Menti agar lebih tegas */
+.btn-ghost.btn-block[style*="background-color: var(--color-primary-light)"] {
+  color: var(--color-primary-dark) !important;
+  font-weight: 700;
+}
+
+/* Membatasi lebar konten dashboard agar tidak terlalu melar di monitor lebar */
+.page-body {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Memberikan efek hover bayangan lembut pada kartu login & tabel */
+.login-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+
+/* --- Custom Blue Login Buttons (Epic 3) --- */
+
+/* Variasi 2: Mentor (Outline Biru) */
+.btn-blue-outline {
+  background-color: transparent !important;
+  border: 1.5px solid var(--color-primary) !important;
+  color: var(--color-primary) !important;
+}
+
+.btn-blue-outline:hover {
+  background-color: var(--color-primary-light) !important;
+}
+
+/* Variasi 3: Menti (Biru Muda Lembut, Teks Tegas) */
+.btn-blue-light {
+  background-color: var(--color-primary-light) !important;
+  color: var(--color-primary) !important;
+  border: 1px solid transparent !important;
+}
+
+.btn-blue-light:hover {
+  background-color: #E0E7FF !important; /* Biru sedikit lebih gelap saat di-hover */
+  color: var(--color-primary-dark) !important;
+}
+
+/* ==========================================
+   ADMIN DASHBOARD - EPIC 15
+========================================== */
+
+.page-footer{
+    text-align:center;
+    padding:20px;
+}
+
+.page-footer p{
+    margin:0;
+}
+
+.visually-hidden{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+.topbar-title{
+    margin:0;
+    font-size:1.25rem;
+    font-weight:600;
+}
+
+.stat-value{
+    margin:0;
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+.stat-label{
+    margin-top:4px;
+    margin-bottom:0;
+}
+
+/* ==========================
+   USER MANAGEMENT
+========================== */
+
+.page-header-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#f5f5f5;
+}
+
+th,
+td{
+    padding:14px;
+    text-align:left;
+    border-bottom:1px solid #e5e5e5;
+}
+
+th{
+    font-weight:600;
+}
+
+.text-center{
+    text-align:center;
+}
+
+/* Badge */
+
+.badge{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:.85rem;
+    font-weight:600;
+}
+
+.badge-admin{
+    background:#fde68a;
+    color:#92400e;
+}
+
+.badge-mentor{
+    background:#bfdbfe;
+    color:#1d4ed8;
+}
+
+.badge-menti{
+    background:#bbf7d0;
+    color:#15803d;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#2563eb;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-ghost{
+    background:#f5f5f5;
+    color:#333;
+}
+
+.btn-ghost:hover{
+    background:#e5e5e5;
+}
+
+.btn-sm{
+    padding:8px 12px;
+    font-size:13px;
+}
+
+.text-danger{
+    color:#dc2626;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    .page-header-flex{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+}
+
+/* =====================================
+   FORM
+===================================== */
+
+.form-card{
+    max-width:700px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:18px;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#374151;
+}
+
+.form-control{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+    background:#fff;
+    box-sizing:border-box;
+}
+
+.form-control:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+.form-actions{
+    display:flex;
+    gap:12px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.btn-outline{
+    background:#fff;
+    color:#2563eb;
+    border:1px solid #2563eb;
+}
+
+.btn-outline:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+@media (max-width:768px){
+
+    .form-actions{
+        flex-direction:column;
+    }
+
+    .form-actions .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .form-card{
+        max-width:100%;
+    }
+
+}
+
+/* =====================================
+   TEST MANAGEMENT
+===================================== */
+
+.table-wrapper{
+    overflow-x:auto;
+}
+
+.badge-published{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.badge-draft{
+    background:#fef3c7;
+    color:#92400e;
+}
+
+.badge-archived{
+    background:#e5e7eb;
+    color:#374151;
+}
+
+.card h3{
+    margin-bottom:20px;
+}
+
+table td{
+    vertical-align:middle;
+}
+
+table td:last-child{
+    white-space:nowrap;
+}
+
+table .btn{
+    margin:2px;
+}
+
+@media(max-width:768px){
+
+    table{
+        min-width:900px;
+    }
+
+}
+
+/* ==========================================
+   ADMIN TEST EDIT
+========================================== */
+
+.card-form {
+    max-width: 650px;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #fff;
+    transition: .2s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,.15);
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn-warning {
+    background: #d97706;
+    color: white;
+}
+
+.btn-warning:hover {
+    background: #b45309;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #475569;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+
+/* ===================================================
+   QUESTIONS PAGE
+=================================================== */
+
+.nav-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+}
+
+.page-header-flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:16px;
+}
+
+.text-primary{
+    color:#4f46e5;
+}
+
+.section-title{
+    margin-bottom:16px;
+    color:#1e293b;
+}
+
+.data-table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:left;
+}
+
+.data-table thead tr{
+    border-bottom:2px solid #e2e8f0;
+}
+
+.data-table th{
+    padding:12px 8px;
+    font-size:13px;
+    color:#64748b;
+}
+
+.data-table td{
+    padding:12px 8px;
+    border-bottom:1px solid #e2e8f0;
+    vertical-align:top;
+}
+
+.col-number{
+    width:60px;
+    text-align:center;
+}
+
+.col-type{
+    width:160px;
+}
+
+.col-action{
+    width:180px;
+    text-align:center;
+}
+
+.table-number{
+    text-align:center;
+    font-weight:bold;
+    color:#4f46e5;
+}
+
+.table-note{
+    margin-top:5px;
+    font-size:12px;
+    color:#64748b;
+}
+
+.badge{
+    display:inline-block;
+    padding:4px 8px;
+    border-radius:4px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.badge-secondary{
+    background:#f1f5f9;
+    color:#334155;
+}
+
+.table-actions{
+    text-align:center;
+}
+
+.action-edit{
+    color:#d97706;
+    text-decoration:none;
+    margin-right:12px;
+}
+
+.action-delete{
+    color:#dc2626;
+    text-decoration:none;
+}
+
+.action-edit:hover,
+.action-delete:hover{
+    text-decoration:underline;
+}
+
+.table-info{
+    margin-top:16px;
+    font-size:12px;
+    color:#94a3b8;
+}
+
+.page-footer{
+    margin-top:30px;
+    text-align:center;
+    color:#64748b;
+}
+
+/* ==========================================
+   EDIT QUESTION PAGE
+========================================== */
+
+.card-form {
+    max-width: 750px;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.option-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.option-label {
+    width: 28px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn-warning {
+    background: #d97706;
+    color: white;
+    border: none;
+}
+
+.btn-warning:hover {
+    background: #b45309;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #334155;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+
+.page-footer {
+    margin-top: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* ==========================================
+   CREATE QUESTION PAGE
+========================================== */
+
+.card-form {
+    max-width: 750px;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.option-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.option-label {
+    width: 28px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #334155;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+
+.page-footer {
+    margin-top: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    border-top: 1px solid #e2e8f0;
+}
+
+
+/* ==========================================================
+   Mentor Tests Index
+========================================================== */
+
+.page-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.data-table thead tr {
+  border-bottom: 2px solid #edf2f7;
+}
+
+.data-table th {
+  padding: 12px 8px;
+  color: #718096;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.data-table tbody tr {
+  border-bottom: 1px solid #edf2f7;
+}
+
+.data-table td {
+  padding: 12px 8px;
+  font-size: 14px;
+}
+
+.table-title {
+  font-weight: 600;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.published {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.table-actions {
+  white-space: nowrap;
+}
+
+.action-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.action-link.view {
+  color: #4f46e5;
+}
+
+.action-link.edit {
+  color: #d97706;
+}
+
+.action-link.delete {
+  color: #dc2626;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  border-top: 1px solid #e5e7eb;
+  margin-top: auto;
+}
+
+/* ==========================================================
+   Mentor Edit Test
+========================================================== */
+
+.form-card {
+    max-width: 600px;
+    padding: 24px;
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-actions {
+    margin-top: 10px;
+}
+
+.btn.btn-secondary {
+    text-decoration: none;
+    background: #64748b;
+    color: #ffffff;
+}
+
+.btn.btn-secondary:hover {
+    background: #475569;
+}
+
+/* ==========================================================
+   Mentor Create Test
+   (Dipakai juga oleh edit.html)
+========================================================== */
+
+.form-card {
+    max-width: 600px;
+    padding: 24px;
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-actions {
+    margin-top: 10px;
+}
+
+.btn.btn-secondary {
+    background: #64748b;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn.btn-secondary:hover {
+    background: #475569;
+}
+
+/* ================================
+   QUESTIONS INDEX
+================================ */
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.test-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #4f46e5;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.question-card {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.question-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.question-table thead tr {
+    border-bottom: 2px solid #edf2f7;
+}
+
+.question-table th {
+    padding: 12px 8px;
+    color: #718096;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.question-table th:first-child {
+    width: 80px;
+}
+
+.question-table th:last-child {
+    width: 180px;
+}
+
+.question-table tbody tr {
+    border-bottom: 1px solid #edf2f7;
+}
+
+.question-table td {
+    padding: 12px 8px;
+    vertical-align: top;
+}
+
+.question-number {
+    color: #64748b;
+    font-weight: 600;
+}
+
+.question-title {
+    color: #1e293b;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.answer-key {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.answer-key strong {
+    color: #10b981;
+}
+
+.action-edit {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #d97706;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.action-delete {
+    text-decoration: none;
+    color: #dc2626;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.action-edit:hover,
+.action-delete:hover {
+    opacity: .8;
+}
+
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+/* ===================================================
+   EDIT QUESTION
+=================================================== */
+
+.edit-question-card {
+    max-width: 650px;
+    margin-top: 20px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.question-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.option-group {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background: #f8fafc;
+    padding: 16px;
+}
+
+.option-group legend {
+    padding: 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.option-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.option-row:first-of-type {
+    margin-top: 0;
+}
+
+.option-label {
+    width: 22px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.option-row input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.form-actions {
+    margin-top: 6px;
+}
+
+.form-actions .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
 }

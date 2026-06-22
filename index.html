@@ -3,79 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - FloTest</title>
+  <title>Masuk — FloTest Authentication</title>
+
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
-  <main class="login-page">
-    <section class="login-container">
+<body class="login-page">
 
-      <header class="login-brand">
-        <div class="login-brand-icon">Flo</div>
-        <h1>Flo<span>Test</span></h1>
-        <p>Platform tes online untuk mentor dan menti</p>
-      </header>
+<div class="login-container">
 
-      <article class="login-card">
-        <h2>Masuk ke Akun</h2>
-        <p class="subtitle">Silakan isi data login dan pilih salah satu role di bawah ini.</p>
+  <!-- Brand -->
+  <header class="login-brand">
+    <div class="login-brand-icon">Flo</div>
 
-        <form action="#" method="POST" novalidate>
+    <h1>
+      Flo<span>Test</span>
+    </h1>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-control"
-              placeholder="nama@email.com">
-          </div>
+    <p>
+      Aplikasi Simulasi &amp; Ujian Online Berbasis Web
+    </p>
+  </header>
 
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              class="form-control"
-              placeholder="Masukkan password">
-          </div>
+  <!-- Login Card -->
+  <main class="login-card">
 
-          <div class="form-group">
-            <label>Pilih Peran Masuk</label>
-            <div class="role-radio-group">
-              <label class="radio-label-box">
-                <input type="radio" name="role_toggle" id="role_admin" checked>
-                <span>Admin</span>
-              </label>
-              <label class="radio-label-box">
-                <input type="radio" name="role_toggle" id="role_mentor">
-                <span>Mentor</span>
-              </label>
-              <label class="radio-label-box">
-                <input type="radio" name="role_toggle" id="role_menti">
-                <span>Menti</span>
-              </label>
-            </div>
-          </div>
+    <h2>Selamat Datang Kembali</h2>
 
-          <div class="login-action-container">
-            <a href="admin/dashboard.html" id="submit_admin" class="btn btn-primary btn-block btn-login-target">Login</a>
-            <a href="mentor/dashboard.html" id="submit_mentor" class="btn btn-primary btn-block btn-login-target">Login</a>
-            <a href="menti/dashboard.html" id="submit_menti" class="btn btn-primary btn-block btn-login-target">Login</a>
-          </div>
+    <p class="subtitle">
+      Silakan pilih peran login simulasi di bawah ini untuk masuk ke dashboard.
+    </p>
 
-        </form>
-      </article>
+    <form action="#" method="post">
 
-    </section>
+      <div class="form-group">
+
+        <label class="form-label" for="login_email">
+          Alamat Email
+          <span class="required">*</span>
+        </label>
+
+        <input
+          type="email"
+          id="login_email"
+          name="email"
+          class="form-control"
+          placeholder="nama@flotest.com"
+          autocomplete="email"
+          required>
+
+      </div>
+
+      <div class="form-group">
+
+        <label class="form-label" for="login_password">
+          Kata Sandi
+          <span class="required">*</span>
+        </label>
+
+        <input
+          type="password"
+          id="login_password"
+          name="password"
+          class="form-control"
+          placeholder="••••••••"
+          autocomplete="current-password"
+          required>
+
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Navigation -->
+      <nav class="login-navigation" aria-label="Navigasi Login">
+
+        <p class="form-label text-center mb-4">
+          PILIH LOGIN AKSES SEBAGAI:
+        </p>
+
+        <div class="login-buttons">
+
+          <a
+            href="admin/dashboard.html"
+            class="btn btn-primary btn-block btn-admin">
+            Masuk sebagai Admin
+          </a>
+
+          <a
+            href="mentor/dashboard.html"
+            class="btn btn-block btn-mentor">
+            Masuk sebagai Mentor
+          </a>
+
+          <a
+            href="menti/dashboard.html"
+            class="btn btn-block btn-menti">
+            Masuk sebagai Menti
+          </a>
+
+        </div>
+
+      </nav>
+
+    </form>
+
   </main>
 
-  <footer>
-    <p>© 2026 FloTest</p>
+  <!-- Footer -->
+  <footer class="login-footer">
+
+    <p>&copy; 2026 FloTest</p>
+
   </footer>
+
+</div>
 
 </body>
 </html>

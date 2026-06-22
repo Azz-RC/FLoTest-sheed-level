@@ -1,77 +1,142 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Mentor — FloTest</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-  <div class="app-layout">
-    <aside class="sidebar" aria-label="Sidebar navigasi">
-      <div class="sidebar-brand">
-        <div class="brand-logo">
-          <div class="brand-icon">Flo</div>
-          <span class="brand-name">Flo<span>Test</span></span>
+<div class="app-layout">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <div class="brand-logo">
+                <div class="brand-icon">Flo</div>
+                <span class="brand-name">Flo<span>Test</span></span>
+            </div>
         </div>
-      </div>
 
-      <div class="sidebar-user">
-        <div class="user-avatar">BS</div>
-        <div class="user-info">
-          <div class="user-name">Budi Santoso</div>
-          <div class="user-role">Mentor</div>
-        </div>
-      </div>
+        <section class="sidebar-user">
+            <div class="user-avatar">BS</div>
 
-      <nav class="sidebar-nav" aria-label="Menu mentor">
-        <div class="nav-label">Menu</div>
-        <a href="dashboard.html" class="nav-item active">
-          <span class="nav-icon">🏠</span> Dashboard
-        </a>
-        <a href="tests/index.html" class="nav-item">
-          <span class="nav-icon">📝</span> Kelola Tes
-        </a>
-      </nav>
+            <div class="user-info">
+                <h3 class="user-name">Budi Santoso</h3>
+                <p class="user-role">Mentor</p>
+            </div>
+        </section>
 
-      <div class="sidebar-footer">
-        <a href="../index.html" class="nav-item btn-danger">
-          <span class="nav-icon">🚪</span> Keluar
-        </a>
-      </div>
+        <nav class="sidebar-nav" aria-label="Menu Mentor">
+
+            <div class="nav-label">Menu Mentor</div>
+
+            <a href="dashboard.html" class="nav-item active">
+                🏠 Dashboard
+            </a>
+
+            <a href="tests/index.html" class="nav-item">
+                📝 Tests
+            </a>
+
+            <a href="tests/create.html" class="nav-item">
+                ➕ Create Test
+            </a>
+
+        </nav>
+
+        <nav class="sidebar-footer" aria-label="Logout">
+
+            <a href="../index.html" class="nav-item btn-danger">
+                🚪 Logout
+            </a>
+
+        </nav>
+
     </aside>
 
     <div class="main-content">
-      <header class="topbar">
-        <span class="topbar-title">Dashboard Mentor</span>
-        <div class="topbar-actions">
-          <a href="tests/create.html" class="btn btn-primary btn-sm">➕ Buat Tes Baru</a>
-        </div>
-      </header>
 
-      <main class="page-body">
-        <div class="page-header">
-          <h1>Selamat Datang, Pak Budi! 👋</h1>
-          <p>Berikut adalah ringkasan aktivitas manajemen tes Anda hari ini.</p>
-        </div>
+        <header class="topbar">
 
-        <div class="stats-grid">
-          <article class="stat-card">
-            <div class="stat-icon blue">📝</div>
-            <div class="stat-info">
-              <div class="stat-value">3</div>
-              <div class="stat-label">Total Tes</div>
+            <h1 class="topbar-title">
+                Dashboard Mentor
+            </h1>
+
+            <div class="topbar-actions">
+
+                <a href="tests/create.html" class="btn btn-primary">
+                    ➕ Buat Test Baru
+                </a>
+
             </div>
-          </article>
-        </div>
-      </main>
 
-      <footer>
-        <span>© 2026 FloTest</span>
-      </footer>
+        </header>
+
+        <main class="page-body">
+
+            <section class="page-header">
+
+                <h2>Selamat Datang, Pak Budi 👋</h2>
+
+                <p>
+                    Berikut ringkasan data manajemen test yang Anda miliki.
+                </p>
+
+            </section>
+
+            <section class="stats-grid">
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+                        📝
+                    </div>
+
+                    <div class="stat-info">
+
+                        <h3 class="stat-value">3</h3>
+
+                        <p class="stat-label">
+                            Total Tests
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ❓
+                    </div>
+
+                    <div class="stat-info">
+
+                        <h3 class="stat-value">45</h3>
+
+                        <p class="stat-label">
+                            Total Questions
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer class="page-footer">
+            <p>© 2026 FloTest — Mentor Dashboard</p>
+        </footer>
+
     </div>
-  </div>
+
+</div>
 
 </body>
 </html>

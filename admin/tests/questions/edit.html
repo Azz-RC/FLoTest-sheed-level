@@ -3,126 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edit Soal  — Admin FloTest</title>
+  <title>Edit Soal Ujian — FloTest SMK</title>
   <link rel="stylesheet" href="../../../assets/css/style.css" />
 </head>
+
 <body>
 
-  <div class="app-layout">
-    
-    <aside class="sidebar" aria-label="Sidebar navigasi">
-      <div class="sidebar-brand">
-        <div class="brand-logo">
-          <div class="brand-icon">Flo</div>
-          <span class="brand-name">Flo<span>Test</span></span>
-        </div>
+<div class="app-layout">
+
+  <aside class="sidebar">
+
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">Flo</div>
+        <span class="brand-name">Flo<span>Test</span></span>
       </div>
-
-      <div class="sidebar-user">
-        <div class="user-avatar">ADM</div>
-        <div class="user-info">
-          <div class="user-name">Super Admin</div>
-          <div class="user-role">Admin System</div>
-        </div>
-      </div>
-
-      <nav class="sidebar-nav" aria-label="Menu admin">
-        <div class="nav-label">Main Menu</div>
-        <a href="../../dashboard.html" class="nav-item">
-          <span class="nav-icon">🏠</span> Dashboard
-        </a>
-        <a href="../../users/index.html" class="nav-item">
-          <span class="nav-icon">👥</span> Kelola Users
-        </a>
-        <a href="../index.html" class="nav-item active">
-          <span class="nav-icon">📝</span> Kelola Tes
-        </a>
-      </nav>
-
-      <div class="sidebar-footer">
-        <a href="../../../index.html" class="nav-item btn-danger">
-          <span class="nav-icon">🚪</span> Keluar
-        </a>
-      </div>
-    </aside>
-
-    <div class="main-content">
-      
-      <header class="topbar">
-        <span class="topbar-title">Edit Soal Master</span>
-      </header>
-
-      <main class="page-body">
-        
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../../dashboard.html">Dashboard</a>
-          <span class="breadcrumb-sep">›</span>
-          <a href="../index.html">Kelola Tes</a>
-          <span class="breadcrumb-sep">›</span>
-          <a href="index.html">Bank Soal Master</a>
-          <span class="breadcrumb-sep">›</span>
-          <span>Edit Soal</span>
-        </nav>
-
-        <section class="card">
-          <div class="card-header">
-            <h2 class="card-title">Form Modifikasi Soal #1</h2>
-          </div>
-          <div class="card-body">
-            
-            <form action="index.html" method="get">
-              
-              <div class="form-group">
-                <label class="form-label">Teks Pertanyaan <span class="required">*</span></label>
-                <textarea class="form-control" required>Elemen HTML yang digunakan untuk membuat baris baru (line break) adalah...</textarea>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Opsi Pilihan Jawaban <span class="required">*</span></label>
-                
-                <div class="option-grid">
-                  <div class="option-group">
-                    <label class="form-hint" style="color: var(--color-success); font-weight: 600; display: block; margin-bottom: 4px;">Opsi A (Kunci Jawaban Benar)</label>
-                    <input type="text" class="form-control" value="&lt;br&gt;" required />
-                  </div>
-                  
-                  <div class="option-group">
-                    <label class="form-hint" style="display: block; margin-bottom: 4px;">Opsi B (Pengecoh)</label>
-                    <input type="text" class="form-control" value="&lt;lb&gt;" required />
-                  </div>
-
-                  <div class="option-group">
-                    <label class="form-hint" style="display: block; margin-bottom: 4px;">Opsi C (Pengecoh)</label>
-                    <input type="text" class="form-control" value="&lt;break&gt;" required />
-                  </div>
-
-                  <div class="option-group">
-                    <label class="form-hint" style="display: block; margin-bottom: 4px;">Opsi D (Pengecoh)</label>
-                    <input type="text" class="form-control" value="&lt;p&gt;" required />
-                  </div>
-                </div>
-              </div>
-
-              <hr class="section-divider" />
-
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
-                <a href="index.html" class="btn btn-outline">Batal</a>
-              </div>
-
-            </form>
-
-          </div>
-        </section>
-
-      </main>
-
-      <footer>
-        <span>© 2026 FloTest — Panel Administrasi Super</span>
-      </footer>
-
     </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-label">Navigasi</div>
+
+      <a href="index.html" class="nav-item">
+        ⬅️ Kembali ke Daftar Questions
+      </a>
+    </nav>
+
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+      <span class="topbar-title">
+        Panel Admin / Edit Butir Pertanyaan
+      </span>
+    </header>
+
+    <main class="page-body">
+
+      <section class="page-header">
+        <h1>📝 Edit Question Form</h1>
+        <p>
+          Memperbarui isi pertanyaan beserta pilihan jawaban dan kunci jawaban.
+        </p>
+      </section>
+
+      <section class="card card-form">
+
+        <form
+          action="index.html"
+          method="GET"
+          onsubmit="alert('Perubahan butir soal berhasil di-update ke sistem!');">
+
+          <div class="form-group">
+            <label for="questionText" class="form-label">
+              Teks Pertanyaan
+            </label>
+
+            <textarea
+              id="questionText"
+              class="form-input"
+              rows="4"
+              required>Tag HTML manakah yang digunakan untuk membuat judul terbesar?</textarea>
+          </div>
+
+          <div class="form-group">
+
+            <label class="form-label">
+              Pilihan Jawaban
+            </label>
+
+            <div class="option-row">
+              <span class="option-label">A.</span>
+
+              <input
+                type="text"
+                class="form-input"
+                value="<h1>"
+                required />
+            </div>
+
+            <div class="option-row">
+              <span class="option-label">B.</span>
+
+              <input
+                type="text"
+                class="form-input"
+                value="<h6>"
+                required />
+            </div>
+
+            <div class="option-row">
+              <span class="option-label">C.</span>
+
+              <input
+                type="text"
+                class="form-input"
+                value="<head>"
+                required />
+            </div>
+
+            <div class="option-row">
+              <span class="option-label">D.</span>
+
+              <input
+                type="text"
+                class="form-input"
+                value="<heading>"
+                required />
+            </div>
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="answerKey" class="form-label">
+              Kunci Jawaban
+            </label>
+
+            <select
+              id="answerKey"
+              class="form-input"
+              required>
+
+              <option value="A" selected>Pilihan A (&lt;h1&gt;)</option>
+              <option value="B">Pilihan B (&lt;h6&gt;)</option>
+              <option value="C">Pilihan C (&lt;head&gt;)</option>
+              <option value="D">Pilihan D (&lt;heading&gt;)</option>
+
+            </select>
+
+          </div>
+
+          <div class="form-actions">
+
+            <button
+              type="submit"
+              class="btn btn-warning">
+              Update Soal
+            </button>
+
+            <a
+              href="index.html"
+              class="btn btn-secondary">
+              Batal
+            </a>
+
+          </div>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>© 2026 FloTest — Panel Evaluasi Soal</p>
+    </footer>
+
   </div>
+
+</div>
 
 </body>
 </html>

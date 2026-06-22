@@ -3,40 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edit Data</title>
+  <title>Edit Test — Mentor FloTest</title>
   <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 <body>
 
-  <div class="app-layout">
-    <aside class="sidebar">
-      <div class="sidebar-brand"><div class="brand-logo"><div class="brand-icon">Flo</div><span class="brand-name">Flo<span>Test</span></span></div></div>
-      <nav class="sidebar-nav">
-        <a href="../dashboard.html" class="nav-item">🏠 Dashboard</a>
-        <a href="index.html" class="nav-item active">📝 Kelola Tes</a>
-      </nav>
-    </aside>
+<div class="app-layout">
 
-    <div class="main-content">
-      <header class="topbar"><span class="topbar-title">Edit Tes</span></header>
-      <main class="page-body">
-        <section class="card">
-          <div class="card-body">
-            <form action="index.html" method="get">
-              <div class="form-group">
-                <label class="form-label">Nama Judul Tes <span class="required">*</span></label>
-                <input type="text" class="form-control" value="HTML Basic Test" required />
-            </div>
-              <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Simpan & Lanjutkan</button>
-                <a href="index.html" class="btn btn-outline">Batal</a>
-              </div>
-            </form>
-          </div>
-        </section>
-      </main>
+  <aside class="sidebar" aria-label="Sidebar mentor">
+
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">Flo</div>
+        <span class="brand-name">Flo<span>Test</span></span>
+      </div>
     </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">BS</div>
+
+      <div class="user-info">
+        <div class="user-name">Budi Santoso</div>
+        <div class="user-role">Mentor</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Menu mentor">
+
+      <div class="nav-label">Menu</div>
+
+      <a href="../dashboard.html" class="nav-item">
+        <span class="nav-icon">⬅️</span>
+        Kembali ke Dashboard
+      </a>
+
+      <a href="index.html" class="nav-item">
+        <span class="nav-icon">📝</span>
+        Menu Tests
+      </a>
+
+      <a href="create.html" class="nav-item">
+        <span class="nav-icon">➕</span>
+        Create Test
+      </a>
+
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="../../index.html" class="nav-item btn-danger">
+        🚪 Keluar
+      </a>
+    </div>
+
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+
+      <span class="topbar-title">
+        Sunting Paket Ujian
+      </span>
+
+      <a href="index.html" class="btn btn-secondary btn-sm">
+        ⬅️ Kembali ke Daftar Tes
+      </a>
+
+    </header>
+
+    <main class="page-body">
+
+      <section class="page-header">
+        <h1>Edit Ujian</h1>
+      </section>
+
+      <section class="card form-card">
+
+        <form action="index.html" method="get" class="form-layout">
+
+          <fieldset class="form-group">
+
+            <label for="edit-title">Title</label>
+
+            <input
+              type="text"
+              id="edit-title"
+              name="title"
+              value="HTML Basic Test"
+              required
+            >
+
+          </fieldset>
+
+          <fieldset class="form-group">
+
+            <label for="edit-desc">Description</label>
+
+            <textarea
+              id="edit-desc"
+              name="description"
+              rows="4"
+              required
+            >Ujian evaluasi kompetensi dasar HTML5.</textarea>
+
+          </fieldset>
+
+          <fieldset class="form-group">
+
+            <label for="edit-status">Status</label>
+
+            <select
+              id="edit-status"
+              name="status"
+            >
+              <option value="Draft">Draft</option>
+              <option value="Published" selected>Published</option>
+              <option value="Archived">Archived</option>
+            </select>
+
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+              Update
+            </button>
+          </div>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>&copy; 2026 FloTest</p>
+    </footer>
+
   </div>
+
+</div>
 
 </body>
 </html>

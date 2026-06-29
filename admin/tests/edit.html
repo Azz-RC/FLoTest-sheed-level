@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edit Paket Ujian — FloTest SMK</title>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Paket Ujian — FloTest</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
@@ -16,43 +16,51 @@
     <div class="sidebar-brand">
       <div class="brand-logo">
         <div class="brand-icon">Flo</div>
-        <span class="brand-name">
-          Flo<span>Test</span>
-        </span>
+        <span class="brand-name">Flo<span>Test</span></span>
+      </div>
+    </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">ADM</div>
+      <div class="user-info">
+        <div class="user-name">Super Admin</div>
+        <div class="user-role">Admin</div>
       </div>
     </div>
 
     <nav class="sidebar-nav">
+
       <div class="nav-label">Navigasi</div>
 
       <a href="../dashboard.html" class="nav-item">
         🏠 Dashboard Admin
       </a>
 
-      <a href="index.html" class="nav-item">
+      <a href="index.html" class="nav-item active">
         ⬅️ Kembali ke Daftar Tests
       </a>
+
     </nav>
+
+    <div class="sidebar-footer">
+      <a href="../../index.html" class="nav-item btn-danger">
+        🚪 Logout
+      </a>
+    </div>
 
   </aside>
 
   <div class="main-content">
 
     <header class="topbar">
-      <span class="topbar-title">
-        Panel Admin / Edit Paket Ujian
-      </span>
+      <span class="topbar-title">Panel Admin / Edit Paket Ujian</span>
     </header>
 
     <main class="page-body">
 
       <section class="page-header">
-        <h1>📝 Halaman Edit Test Form</h1>
-
-        <p>
-          Sesuaikan ulang konfigurasi, judul, atau status publikasi
-          dari paket tes terpilih.
-        </p>
+        <h1>📝 Edit Test Form</h1>
+        <p>Sesuaikan konfigurasi, judul, atau status publikasi dari paket tes terpilih.</p>
       </section>
 
       <section class="card card-form">
@@ -60,106 +68,57 @@
         <form
           action="index.html"
           method="GET"
-          onsubmit="alert('Perubahan paket ujian berhasil disimpan secara lokal!');">
+          onsubmit="alert('Perubahan paket ujian berhasil disimpan!');">
 
           <div class="form-group">
-
-            <label for="title" class="form-label">
-              Ubah Judul Ujian
-            </label>
-
+            <label for="title" class="form-label">Judul Ujian</label>
             <input
               id="title"
               type="text"
               class="form-input"
-              value="HTML Basic Test"
-              required
-            />
-
+              value="Dasar Pemrograman"
+              required>
           </div>
 
           <div class="form-group">
-
-            <label for="description" class="form-label">
-              Ubah Deskripsi / Petunjuk
-            </label>
-
+            <label for="description" class="form-label">Deskripsi / Petunjuk</label>
             <textarea
               id="description"
               class="form-input"
-              rows="4">Ujian tingkat dasar ini mencakup pengenalan tag HTML5, elemen semantik, pembuatan tabel, formulir input, beserta penataan struktur dokumen web standar dasar.</textarea>
-
+              rows="4">Ujian ini mencakup konsep dasar pemrograman meliputi variabel, tipe data, struktur kontrol, fungsi, dan logika algoritma dasar.</textarea>
           </div>
 
           <div class="form-group">
-
-            <label for="mentor" class="form-label">
-              Ubah Mentor Penanggung Jawab
-            </label>
-
-            <select
-              id="mentor"
-              class="form-input"
-              required>
-
-              <option selected>
-                Budi Setiawan, M.Kom
-              </option>
-
-              <option>
-                Siti Rahma, S.T
-              </option>
-
+            <label for="mentor" class="form-label">Mentor Penanggung Jawab</label>
+            <select id="mentor" class="form-input" required>
+              <option value="Budi Santoso" selected>Budi Santoso</option>
+              <option value="Siti Khadijah, M.Pd">Siti Khadijah, M.Pd</option>
             </select>
-
           </div>
 
           <div class="form-group">
-
-            <label for="status" class="form-label">
-              Ubah Status Paket
-            </label>
-
-            <select
-              id="status"
-              class="form-input"
-              required>
-
-              <option>Draft</option>
-
-              <option selected>
-                Published (Rilis)
-              </option>
-
-              <option>
-                Archived (Arsip)
-              </option>
-
+            <label for="status" class="form-label">Status Paket</label>
+            <select id="status" class="form-input" required>
+              <option value="Draft">Draft</option>
+              <option value="Published" selected>Published</option>
+              <option value="Archived">Archived</option>
             </select>
-
           </div>
 
-          <nav class="form-actions">
-
-            <button
-              type="submit"
-              class="btn btn-warning">
-              Update Paket Ujian
-            </button>
-
-            <a
-              href="index.html"
-              class="btn btn-secondary">
-              Batalkan
-            </a>
-
-          </nav>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-warning">Update Paket Ujian</button>
+            <a href="index.html" class="btn btn-secondary">Batalkan</a>
+          </div>
 
         </form>
 
       </section>
 
     </main>
+
+    <footer class="page-footer">
+      <p>© 2026 FloTest</p>
+    </footer>
 
   </div>
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buat Paket Ujian Baru — FloTest SMK</title>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Paket Ujian Baru — FloTest</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
@@ -16,43 +16,51 @@
     <div class="sidebar-brand">
       <div class="brand-logo">
         <div class="brand-icon">Flo</div>
-        <span class="brand-name">
-          Flo<span>Test</span>
-        </span>
+        <span class="brand-name">Flo<span>Test</span></span>
+      </div>
+    </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">ADM</div>
+      <div class="user-info">
+        <div class="user-name">Super Admin</div>
+        <div class="user-role">Admin</div>
       </div>
     </div>
 
     <nav class="sidebar-nav">
+
       <div class="nav-label">Navigasi</div>
 
       <a href="../dashboard.html" class="nav-item">
         🏠 Dashboard Admin
       </a>
 
-      <a href="index.html" class="nav-item">
+      <a href="index.html" class="nav-item active">
         ⬅️ Kembali ke Daftar Tests
       </a>
+
     </nav>
+
+    <div class="sidebar-footer">
+      <a href="../../index.html" class="nav-item btn-danger">
+        🚪 Logout
+      </a>
+    </div>
 
   </aside>
 
   <div class="main-content">
 
     <header class="topbar">
-      <span class="topbar-title">
-        Panel Admin / Tambah Ujian Baru
-      </span>
+      <span class="topbar-title">Panel Admin / Tambah Ujian Baru</span>
     </header>
 
     <main class="page-body">
 
       <section class="page-header">
-        <h1>➕ Halaman Create Test Form</h1>
-
-        <p>
-          Rancang paket ujian atau kelompok kuis baru
-          untuk menguji kompetensi menti.
-        </p>
+        <h1>➕ Create Test Form</h1>
+        <p>Rancang paket ujian baru untuk menguji kompetensi menti.</p>
       </section>
 
       <section class="card card-form">
@@ -60,113 +68,59 @@
         <form
           action="index.html"
           method="GET"
-          onsubmit="alert('Data dummy ujian berhasil ditambahkan ke sistem!');">
+          onsubmit="alert('Paket ujian berhasil ditambahkan!');">
 
           <div class="form-group">
-
-            <label for="title" class="form-label">
-              Judul Paket Ujian (Title)
-            </label>
-
+            <label for="title" class="form-label">Judul Paket Ujian (Title)</label>
             <input
               id="title"
               type="text"
               class="form-input"
-              placeholder="Contoh: JavaScript DOM Manipulation"
-              required
-            >
-
+              placeholder="Contoh: Dasar Pemrograman"
+              required>
           </div>
 
           <div class="form-group">
-
-            <label for="description" class="form-label">
-              Deskripsi / Petunjuk Ujian
-            </label>
-
+            <label for="description" class="form-label">Deskripsi / Petunjuk Ujian</label>
             <textarea
               id="description"
               class="form-input"
               rows="4"
               placeholder="Tulis instruksi pengerjaan, durasi, KKM, atau materi cakupan ujian..."></textarea>
-
           </div>
 
           <div class="form-group">
-
-            <label for="mentor" class="form-label">
-              Penanggung Jawab / Pembuat Soal (Mentor)
-            </label>
-
-            <select
-              id="mentor"
-              class="form-input"
-              required>
-
-              <option value="">
-                -- Pilih Mentor Guru --
-              </option>
-
-              <option value="Budi Setiawan, M.Kom">
-                Budi Setiawan, M.Kom
-              </option>
-
-              <option value="Siti Rahma, S.T">
-                Siti Rahma, S.T
-              </option>
-
+            <label for="mentor" class="form-label">Penanggung Jawab / Mentor</label>
+            <select id="mentor" class="form-input" required>
+              <option value="">-- Pilih Mentor --</option>
+              <option value="Budi Santoso">Budi Santoso</option>
+              <option value="Siti Khadijah, M.Pd">Siti Khadijah, M.Pd</option>
             </select>
-
           </div>
 
           <div class="form-group">
-
-            <label for="status" class="form-label">
-              Status Penerbitan Paket
-            </label>
-
-            <select
-              id="status"
-              class="form-input"
-              required>
-
-              <option value="Draft">
-                Draft
-              </option>
-
-              <option value="Published">
-                Published (Rilis)
-              </option>
-
-              <option value="Archived">
-                Archived (Arsip)
-              </option>
-
+            <label for="status" class="form-label">Status Penerbitan</label>
+            <select id="status" class="form-input" required>
+              <option value="Draft">Draft</option>
+              <option value="Published">Published</option>
+              <option value="Archived">Archived</option>
             </select>
-
           </div>
 
-          <nav class="form-actions">
-
-            <button
-              type="submit"
-              class="btn btn-primary">
-              Simpan Paket Ujian
-            </button>
-
-            <a
-              href="index.html"
-              class="btn btn-secondary">
-              Batalkan
-            </a>
-
-          </nav>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Simpan Paket Ujian</button>
+            <a href="index.html" class="btn btn-secondary">Batalkan</a>
+          </div>
 
         </form>
 
       </section>
 
     </main>
+
+    <footer class="page-footer">
+      <p>© 2026 FloTest</p>
+    </footer>
 
   </div>
 

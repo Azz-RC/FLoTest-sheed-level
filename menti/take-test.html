@@ -26,26 +26,15 @@
         </div>
       </div>
 
-     <nav class="sidebar-nav" aria-label="Menu menti">
-      <div class="nav-label">Menu</div>
-      
-      <a href="dashboard.html" class="nav-item">
-        <span class="nav-icon">⬅️</span> Kembali ke Dashboard
-      </a>
-  
-      <a href="take-test.html" class="nav-item active">
-        <span class="nav-icon">✏️</span> Kerjakan Tes
-      </a>
-  
-      <a href="result.html" class="nav-item">
-        <span class="nav-icon">📊</span> Hasil Tes
-      </a>
-    </nav>
+      <nav class="sidebar-nav" aria-label="Menu menti">
+        <div class="nav-label">Menu</div>
+        <a href="dashboard.html" class="nav-item">⬅️ Kembali ke Dashboard</a>
+        <a href="take-test.html" class="nav-item active">✏️ Kerjakan Tes</a>
+        <a href="result.html" class="nav-item">📊 Hasil Tes</a>
+      </nav>
 
       <div class="sidebar-footer">
-        <a href="../index.html" class="nav-item btn-danger">
-          <span class="nav-icon">🚪</span> Keluar
-        </a>
+        <a href="../index.html" class="nav-item btn-danger">🚪 Keluar</a>
       </div>
     </aside>
 
@@ -63,64 +52,179 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="dashboard.html">Dashboard</a>
           <span class="breadcrumb-sep">›</span>
-          <span>HTML Basic Test</span>
+          <span>Dasar Pemrograman</span>
         </nav>
 
-        <div class="page-header">
-          <h1>HTML Basic Test</h1>
-          <p>Mentor: Budi Santoso · 10 Soal · Durasi: 45 menit</p>
-        </div>
+        <section class="page-header">
+          <h1>Tes Dasar Pemrograman</h1>
+          <p>Mentor: Budi Santoso · 5 Soal · Durasi: 45 Menit</p>
+        </section>
 
-        <div class="quiz-progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" aria-label="Progress soal">
+        <section
+          class="quiz-progress-bar"
+          role="progressbar"
+          aria-valuenow="20"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-label="Progress pengerjaan soal">
           <div class="quiz-progress-fill"></div>
-        </div>
+        </section>
 
         <div class="quiz-grid-container">
+          <form action="result.html" method="get">
 
-          <section class="card" aria-labelledby="question-heading">
-            <div class="card-body">
-
-              <form action="result.html" method="get" novalidate>
-                <div class="question-number" id="question-heading">Soal 1 dari 10</div>
-                <p class="question-text">Apa fungsi HTML?</p>
-
+            <!-- Soal 1 -->
+            <section class="card">
+              <div class="card-body">
+                <div class="question-number">Soal 1 dari 5</div>
+                <p class="question-text">Apa yang dimaksud dengan variabel dalam pemrograman?</p>
                 <fieldset class="quiz-fieldset">
                   <legend class="hidden-heading">Pilihan jawaban</legend>
                   <div class="option-list">
-                    <label class="option-item">
-                      <input type="radio" name="q1" value="a" />
-                      <span class="option-label"><strong>A.</strong> HyperText Markup Language — bahasa untuk membuat struktur dan konten halaman web</span>
+                    <label class="option-item" for="q1-a">
+                      <input type="radio" id="q1-a" name="q1" value="a" required>
+                      <span class="option-label"><strong>A.</strong> Sebuah perintah untuk mencetak output</span>
                     </label>
-                    <label class="option-item">
-                      <input type="radio" name="q1" value="b" />
-                      <span class="option-label"><strong>B.</strong> Bahasa pemrograman untuk membuat logika dan kalkulasi</span>
+                    <label class="option-item" for="q1-b">
+                      <input type="radio" id="q1-b" name="q1" value="b">
+                      <span class="option-label"><strong>B.</strong> Tempat penyimpanan data yang nilainya dapat berubah</span>
                     </label>
-                    <label class="option-item">
-                      <input type="radio" name="q1" value="c" />
-                      <span class="option-label"><strong>C.</strong> Bahasa untuk mendesain tampilan dan warna halaman web</span>
+                    <label class="option-item" for="q1-c">
+                      <input type="radio" id="q1-c" name="q1" value="c">
+                      <span class="option-label"><strong>C.</strong> Sebuah fungsi bawaan bahasa pemrograman</span>
                     </label>
-                    <label class="option-item">
-                      <input type="radio" name="q1" value="d" />
-                      <span class="option-label"><strong>D.</strong> Sistem database untuk menyimpan konten web</span>
+                    <label class="option-item" for="q1-d">
+                      <input type="radio" id="q1-d" name="q1" value="d">
+                      <span class="option-label"><strong>D.</strong> Operator untuk membandingkan dua nilai</span>
                     </label>
                   </div>
                 </fieldset>
+              </div>
+            </section>
 
-                <hr class="section-divider" />
-
-                <div class="quiz-nav">
-                  <a href="dashboard.html" class="btn btn-outline">← Keluar Tes</a>
-                  <div class="quiz-action-buttons">
-                    <button type="button" class="btn btn-outline" disabled>← Sebelumnya</button>
-                    <button type="button" class="btn btn-outline">Selanjutnya →</button>
-                    <button type="submit" class="btn btn-primary">Submit Tes</button>
+            <!-- Soal 2 -->
+            <section class="card">
+              <div class="card-body">
+                <div class="question-number">Soal 2 dari 5</div>
+                <p class="question-text">Manakah tipe data yang digunakan untuk menyimpan angka desimal?</p>
+                <fieldset class="quiz-fieldset">
+                  <legend class="hidden-heading">Pilihan jawaban</legend>
+                  <div class="option-list">
+                    <label class="option-item" for="q2-a">
+                      <input type="radio" id="q2-a" name="q2" value="a" required>
+                      <span class="option-label"><strong>A.</strong> Integer</span>
+                    </label>
+                    <label class="option-item" for="q2-b">
+                      <input type="radio" id="q2-b" name="q2" value="b">
+                      <span class="option-label"><strong>B.</strong> Boolean</span>
+                    </label>
+                    <label class="option-item" for="q2-c">
+                      <input type="radio" id="q2-c" name="q2" value="c">
+                      <span class="option-label"><strong>C.</strong> Float</span>
+                    </label>
+                    <label class="option-item" for="q2-d">
+                      <input type="radio" id="q2-d" name="q2" value="d">
+                      <span class="option-label"><strong>D.</strong> String</span>
+                    </label>
                   </div>
-                </div>
+                </fieldset>
+              </div>
+            </section>
 
-              </form>
+            <!-- Soal 3 -->
+            <section class="card">
+              <div class="card-body">
+                <div class="question-number">Soal 3 dari 5</div>
+                <p class="question-text">Struktur kontrol manakah yang digunakan untuk mengulang blok kode selama kondisi bernilai benar?</p>
+                <fieldset class="quiz-fieldset">
+                  <legend class="hidden-heading">Pilihan jawaban</legend>
+                  <div class="option-list">
+                    <label class="option-item" for="q3-a">
+                      <input type="radio" id="q3-a" name="q3" value="a" required>
+                      <span class="option-label"><strong>A.</strong> While</span>
+                    </label>
+                    <label class="option-item" for="q3-b">
+                      <input type="radio" id="q3-b" name="q3" value="b">
+                      <span class="option-label"><strong>B.</strong> If</span>
+                    </label>
+                    <label class="option-item" for="q3-c">
+                      <input type="radio" id="q3-c" name="q3" value="c">
+                      <span class="option-label"><strong>C.</strong> Switch</span>
+                    </label>
+                    <label class="option-item" for="q3-d">
+                      <input type="radio" id="q3-d" name="q3" value="d">
+                      <span class="option-label"><strong>D.</strong> Return</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+            </section>
 
+            <!-- Soal 4 -->
+            <section class="card">
+              <div class="card-body">
+                <div class="question-number">Soal 4 dari 5</div>
+                <p class="question-text">Apa output dari kode berikut: print(2 ** 3) dalam Python?</p>
+                <fieldset class="quiz-fieldset">
+                  <legend class="hidden-heading">Pilihan jawaban</legend>
+                  <div class="option-list">
+                    <label class="option-item" for="q4-a">
+                      <input type="radio" id="q4-a" name="q4" value="a" required>
+                      <span class="option-label"><strong>A.</strong> 6</span>
+                    </label>
+                    <label class="option-item" for="q4-b">
+                      <input type="radio" id="q4-b" name="q4" value="b">
+                      <span class="option-label"><strong>B.</strong> 9</span>
+                    </label>
+                    <label class="option-item" for="q4-c">
+                      <input type="radio" id="q4-c" name="q4" value="c">
+                      <span class="option-label"><strong>C.</strong> 5</span>
+                    </label>
+                    <label class="option-item" for="q4-d">
+                      <input type="radio" id="q4-d" name="q4" value="d">
+                      <span class="option-label"><strong>D.</strong> 8</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+            </section>
+
+            <!-- Soal 5 -->
+            <section class="card">
+              <div class="card-body">
+                <div class="question-number">Soal 5 dari 5</div>
+                <p class="question-text">Apa fungsi dari keyword "return" di dalam sebuah fungsi?</p>
+                <fieldset class="quiz-fieldset">
+                  <legend class="hidden-heading">Pilihan jawaban</legend>
+                  <div class="option-list">
+                    <label class="option-item" for="q5-a">
+                      <input type="radio" id="q5-a" name="q5" value="a" required>
+                      <span class="option-label"><strong>A.</strong> Menghentikan program secara paksa</span>
+                    </label>
+                    <label class="option-item" for="q5-b">
+                      <input type="radio" id="q5-b" name="q5" value="b">
+                      <span class="option-label"><strong>B.</strong> Mengembalikan nilai dari fungsi ke pemanggil</span>
+                    </label>
+                    <label class="option-item" for="q5-c">
+                      <input type="radio" id="q5-c" name="q5" value="c">
+                      <span class="option-label"><strong>C.</strong> Mencetak nilai ke layar</span>
+                    </label>
+                    <label class="option-item" for="q5-d">
+                      <input type="radio" id="q5-d" name="q5" value="d">
+                      <span class="option-label"><strong>D.</strong> Mendeklarasikan variabel baru</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+            </section>
+
+            <div class="quiz-nav" aria-label="Navigasi soal">
+              <button type="button" class="btn btn-outline" disabled>← Sebelumnya</button>
+              <button type="button" class="btn btn-outline">Selanjutnya →</button>
+              <button type="submit" class="btn btn-primary">Submit Tes</button>
             </div>
-          </section>
+
+          </form>
 
           <aside class="card quiz-sidebar-numbers" aria-label="Daftar Nomor Soal">
             <div class="card-body">
@@ -131,19 +235,15 @@
                 <span class="num-item">3</span>
                 <span class="num-item">4</span>
                 <span class="num-item">5</span>
-                <span class="num-item">6</span>
-                <span class="num-item">7</span>
-                <span class="num-item">8</span>
-                <span class="num-item">9</span>
-                <span class="num-item">10</span>
               </div>
             </div>
           </aside>
 
-        </div> 
+        </div>
+
       </main>
 
-      <footer>
+      <footer class="page-footer">
         <span>© 2026 FloTest</span>
       </footer>
 

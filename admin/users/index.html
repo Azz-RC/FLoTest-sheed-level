@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelola Users — FloTest</title>
-
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
@@ -12,214 +11,174 @@
 
 <div class="app-layout">
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
+  <aside class="sidebar">
 
-        <div class="sidebar-brand">
-            <div class="brand-logo">
-                <div class="brand-icon">Flo</div>
-                <span class="brand-name">Flo<span>Test</span></span>
-            </div>
-        </div>
-
-        <nav class="sidebar-nav">
-
-            <div class="nav-label">
-                Admin Menu
-            </div>
-
-            <a href="../dashboard.html" class="nav-item">
-                🏠 Dashboard
-            </a>
-
-            <a href="index.html" class="nav-item active">
-                👥 Users List
-            </a>
-
-            <a href="../tests/index.html" class="nav-item">
-                📝 Tests List
-            </a>
-
-            <a href="../tests/questions/index.html" class="nav-item">
-                ❓ Questions List
-            </a>
-
-        </nav>
-
-        <div class="sidebar-footer">
-            <a href="../../index.html" class="nav-item btn-danger">
-                🚪 Logout
-            </a>
-        </div>
-
-    </aside>
-
-
-
-    <!-- CONTENT -->
-    <div class="main-content">
-
-        <header class="topbar">
-            <h1 class="topbar-title">Manajemen Pengguna</h1>
-        </header>
-
-        <main class="page-body">
-
-            <section class="content-section">
-
-                <div class="page-header page-header-flex">
-
-                    <div>
-                        <h2>Daftar Pengguna</h2>
-                        <p>Total pengguna terdaftar: <strong>8 akun</strong></p>
-                    </div>
-
-                    <a href="create.html" class="btn btn-primary">
-                        + Tambah User
-                    </a>
-
-                </div>
-
-
-                <div class="card">
-
-                    <table>
-
-                        <thead>
-
-                            <tr>
-                                <th>Nama</th>
-                                <th>Email</th>
-                                <th>Role</th>
-                                <th class="text-center">Aksi</th>
-                            </tr>
-
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td><strong>Super Admin</strong></td>
-                                <td>admin@flotest.id</td>
-                                <td>
-                                    <span class="badge badge-admin">
-                                        Admin
-                                    </span>
-                                </td>
-                                <td class="text-center">
-                                    <a href="edit.html" class="btn btn-ghost btn-sm">
-                                        ✏️ Edit
-                                    </a>
-
-                                    <button class="btn btn-ghost btn-sm text-danger">
-                                        🗑 Delete
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Siti Khadijah, M.Pd</strong></td>
-                                <td>siti.mentor@mail.com</td>
-                                <td>
-                                    <span class="badge badge-mentor">
-                                        Mentor
-                                    </span>
-                                </td>
-                                <td class="text-center">
-                                    <a href="edit.html" class="btn btn-ghost btn-sm">
-                                        ✏️ Edit
-                                    </a>
-
-                                    <button class="btn btn-ghost btn-sm text-danger">
-                                        🗑 Delete
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Budi Setiawan, M.Kom</strong></td>
-                                <td>budi.mentor@mail.com</td>
-                                <td>
-                                    <span class="badge badge-mentor">
-                                        Mentor
-                                    </span>
-                                </td>
-                                <td class="text-center">
-                                    <a href="edit.html" class="btn btn-ghost btn-sm">
-                                        ✏️ Edit
-                                    </a>
-
-                                    <button class="btn btn-ghost btn-sm text-danger">
-                                        🗑 Delete
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Andi Saputra</strong></td>
-                                <td>andi@mail.com</td>
-                                <td><span class="badge badge-menti">Menti</span></td>
-                                <td class="text-center">
-                                    <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
-                                    <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Rian Hidayat</strong></td>
-                                <td>rian.menti@mail.com</td>
-                                <td><span class="badge badge-menti">Menti</span></td>
-                                <td class="text-center">
-                                    <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
-                                    <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Citra Lestari</strong></td>
-                                <td>citra.menti@mail.com</td>
-                                <td><span class="badge badge-menti">Menti</span></td>
-                                <td class="text-center">
-                                    <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
-                                    <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Dewi Ayu</strong></td>
-                                <td>dewi.menti@mail.com</td>
-                                <td><span class="badge badge-menti">Menti</span></td>
-                                <td class="text-center">
-                                    <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
-                                    <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><strong>Eko Prasetyo</strong></td>
-                                <td>eko.menti@mail.com</td>
-                                <td><span class="badge badge-menti">Menti</span></td>
-                                <td class="text-center">
-                                    <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
-                                    <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
-                                </td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-            </section>
-
-        </main>
-
-        <footer>
-            © 2026 FloTest
-        </footer>
-
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">Flo</div>
+        <span class="brand-name">Flo<span>Test</span></span>
+      </div>
     </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">ADM</div>
+      <div class="user-info">
+        <div class="user-name">Super Admin</div>
+        <div class="user-role">Admin</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <div class="nav-label">Admin Menu</div>
+
+      <a href="../dashboard.html" class="nav-item">
+        🏠 Dashboard
+      </a>
+
+      <a href="index.html" class="nav-item active">
+        👥 Users List
+      </a>
+
+      <a href="../tests/index.html" class="nav-item">
+        📝 Tests List
+      </a>
+
+      <a href="../tests/questions/index.html" class="nav-item">
+        ❓ Questions List
+      </a>
+
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="../../index.html" class="nav-item btn-danger">
+        🚪 Logout
+      </a>
+    </div>
+
+  </aside>
+
+  <div class="main-content">
+
+    <header class="topbar">
+      <h1 class="topbar-title">Manajemen Pengguna</h1>
+    </header>
+
+    <main class="page-body">
+
+      <section class="content-section">
+
+        <div class="page-header page-header-flex">
+          <div>
+            <h2>Daftar Pengguna</h2>
+            <p>Total pengguna terdaftar: <strong>8 akun</strong></p>
+          </div>
+          <a href="create.html" class="btn btn-primary">+ Tambah User</a>
+        </div>
+
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th class="text-center">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td><strong>Super Admin</strong></td>
+                <td>admin@flotest.id</td>
+                <td><span class="badge badge-admin">Admin</span></td>
+                <td class="text-center">
+                  <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Budi Santoso</strong></td>
+                <td>budi.mentor@mail.com</td>
+                <td><span class="badge badge-mentor">Mentor</span></td>
+                <td class="text-center">
+                  <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Siti Khadijah, M.Pd</strong></td>
+                <td>siti.mentor@mail.com</td>
+                <td><span class="badge badge-mentor">Mentor</span></td>
+                <td class="text-center">
+                  <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Andi Wijaya</strong></td>
+                <td>andi@mail.com</td>
+                <td><span class="badge badge-menti">Menti</span></td>
+                <td class="text-center">
+                  <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Rian Hidayat</strong></td>
+                <td>rian.menti@mail.com</td>
+                <td><span class="badge badge-menti">Menti</span></td>
+                <td class="text-center">
+                  <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Citra Lestari</strong></td>
+                <td>citra.menti@mail.com</td>
+                <td><span class="badge badge-menti">Menti</span></td>
+                <td class="text-center">
+                  <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Dewi Ayu</strong></td>
+                <td>dewi.menti@mail.com</td>
+                <td><span class="badge badge-menti">Menti</span></td>
+                <td class="text-center">
+                  <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td><strong>Eko Prasetyo</strong></td>
+                <td>eko.menti@mail.com</td>
+                <td><span class="badge badge-menti">Menti</span></td>
+                <td class="text-center">
+                  <a href="edit.html" class="btn btn-ghost btn-sm">✏️ Edit</a>
+                  <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>© 2026 FloTest</footer>
+
+  </div>
 
 </div>
 

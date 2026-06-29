@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Question — Basis Data</title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <aside class="sidebar" aria-label="Sidebar Mentor">
+
+        <div class="sidebar-brand">
+            <div class="brand-logo">
+                <div class="brand-icon">Flo</div>
+                <span class="brand-name">Flo<span>Test</span></span>
+            </div>
+        </div>
+
+        <div class="sidebar-user">
+            <div class="user-avatar">BS</div>
+            <div class="user-info">
+                <div class="user-name">Budi Santoso</div>
+                <div class="user-role">Mentor</div>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Menu Mentor">
+            <div class="nav-label">Menu</div>
+            <a href="../../../dashboard.html" class="nav-item">
+                <span class="nav-icon">⬅️</span>
+                Dashboard
+            </a>
+            <a href="../../index.html" class="nav-item active">
+                <span class="nav-icon">📝</span>
+                Menu Tests
+            </a>
+            <a href="../../create.html" class="nav-item">
+                <span class="nav-icon">➕</span>
+                Create Test
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="../../../../index.html" class="nav-item btn-danger">
+                🚪 Keluar
+            </a>
+        </div>
+
+    </aside>
+
+    <div class="main-content">
+
+        <header class="topbar">
+            <span class="topbar-title">Sunting Pertanyaan</span>
+            <a href="index.html" class="btn btn-secondary btn-sm">
+                ⬅️ Kembali ke Daftar Soal
+            </a>
+        </header>
+
+        <main class="page-body">
+
+            <section class="page-header">
+                <h1>Edit Soal</h1>
+                <p>Ubah teks pertanyaan atau pilihan jawaban di bawah ini.</p>
+            </section>
+
+            <section class="card edit-question-card">
+
+                <form action="index.html" method="get" class="question-form">
+
+                    <div class="form-group">
+                        <label for="edit-question-text">Question Text</label>
+                        <textarea
+                            id="edit-question-text"
+                            rows="3"
+                            required>Perintah SQL manakah yang digunakan untuk mengambil data dari tabel?</textarea>
+                    </div>
+
+                    <fieldset class="option-group">
+                        <legend>Pilihan Jawaban</legend>
+
+                        <div class="option-row">
+                            <span class="option-label">A.</span>
+                            <input type="text" value="SELECT" required>
+                        </div>
+
+                        <div class="option-row">
+                            <span class="option-label">B.</span>
+                            <input type="text" value="INSERT" required>
+                        </div>
+
+                        <div class="option-row">
+                            <span class="option-label">C.</span>
+                            <input type="text" value="UPDATE" required>
+                        </div>
+
+                        <div class="option-row">
+                            <span class="option-label">D.</span>
+                            <input type="text" value="DELETE" required>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="edit-correct-answer">Jawaban Benar</label>
+                        <select id="edit-correct-answer" required>
+                            <option value="A" selected>A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer class="page-footer">
+            <span>© 2026 FloTest</span>
+        </footer>
+
+    </div>
+
+</div>
+
+</body>
+</html>

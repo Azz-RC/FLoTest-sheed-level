@@ -8,148 +8,126 @@
 </head>
 <body>
 
-<div class="app-layout">
+  <div class="app-layout">
 
-  <aside class="sidebar" aria-label="Sidebar mentor">
-
-    <div class="sidebar-brand">
-      <div class="brand-logo">
-        <div class="brand-icon">Flo</div>
-        <span class="brand-name">Flo<span>Test</span></span>
-      </div>
-    </div>
-
-    <div class="sidebar-user">
-      <div class="user-avatar">BS</div>
-
-      <div class="user-info">
-        <div class="user-name">Budi Santoso</div>
-        <div class="user-role">Mentor</div>
-      </div>
-    </div>
-
-    <nav class="sidebar-nav" aria-label="Menu Mentor">
-
-      <div class="nav-label">Menu</div>
-
-      <a href="../dashboard.html" class="nav-item">
-        <span class="nav-icon">⬅️</span>
-        Kembali ke Dashboard
-      </a>
-
-      <a href="index.html" class="nav-item active">
-        <span class="nav-icon">📝</span>
-        Menu Tests
-      </a>
-
-      <a href="create.html" class="nav-item">
-        <span class="nav-icon">➕</span>
-        Create Test
-      </a>
-
-    </nav>
-
-    <div class="sidebar-footer">
-      <a href="../../index.html" class="nav-item btn-danger">
-        🚪 Keluar
-      </a>
-    </div>
-
-  </aside>
-
-  <div class="main-content">
-
-    <header class="topbar">
-      <span class="topbar-title">Manajemen Ujian Mentor</span>
-    </header>
-
-    <main class="page-body">
-
-      <section class="page-header page-header-flex">
-
-        <div>
-          <h1>Daftar Paket Tes Anda</h1>
-
-          <p>
-            Mengelola seluruh simulasi ujian statis yang telah Anda publikasikan
-            atau simpan.
-          </p>
+    <aside class="sidebar" aria-label="Sidebar mentor">
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <div class="brand-icon">Flo</div>
+          <span class="brand-name">Flo<span>Test</span></span>
         </div>
+      </div>
 
-        <a href="create.html" class="btn btn-primary">
-          + Tambah Tes
+      <div class="sidebar-user">
+        <div class="user-avatar">BS</div>
+        <div class="user-info">
+          <div class="user-name">Budi Santoso</div>
+          <div class="user-role">Mentor</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Menu Mentor">
+        <div class="nav-label">Menu</div>
+        <a href="../dashboard.html" class="nav-item">
+          <span class="nav-icon">⬅️</span>
+          Kembali ke Dashboard
         </a>
+        <a href="index.html" class="nav-item active">
+          <span class="nav-icon">📝</span>
+          Tests
+        </a>
+        <a href="create.html" class="nav-item">
+          <span class="nav-icon">➕</span>
+          Create Test
+        </a>
+      </nav>
 
-      </section>
+      <div class="sidebar-footer">
+        <a href="../../index.html" class="nav-item btn-danger">
+          🚪 Keluar
+        </a>
+      </div>
+    </aside>
 
-      <section class="card">
+    <div class="main-content">
+      <header class="topbar">
+        <span class="topbar-title">Manajemen Ujian Mentor</span>
+      </header>
 
-        <div class="table-wrapper">
+      <main class="page-body">
+        <section class="page-header page-header-flex">
+          <div>
+            <h1>Daftar Paket Tes Anda</h1>
+            <p>
+              Mengelola seluruh simulasi ujian statis yang telah Anda publikasikan
+              atau simpan.
+            </p>
+          </div>
+          <a href="create.html" class="btn btn-primary">
+            + Tambah Tes
+          </a>
+        </section>
 
-          <table class="data-table">
+        <section class="card">
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>TITLE</th>
+                  <th>STATUS</th>
+                  <th>QUESTIONS COUNT</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-title">Dasar Pemrograman</td>
+                  <td>
+                    <span class="status published">Published</span>
+                  </td>
+                  <td>5 Soal</td>
+                  <td class="table-actions">
+                    <a href="questions-dasarpemrograman/index.html" class="action-link view">👁️ View Questions</a>
+                    <a href="edit.html" class="action-link edit">📝 Edit</a>
+                    <a href="index.html" class="action-link delete">🗑️ Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-title">Basis Data</td>
+                  <td>
+                    <span class="status published">Published</span>
+                  </td>
+                  <td>5 Soal</td>
+                  <td class="table-actions">
+                    <a href="questions-basisdata/index.html" class="action-link view">👁️ View Questions</a>
+                    <a href="edit.html" class="action-link edit">📝 Edit</a>
+                    <a href="index.html" class="action-link delete">🗑️ Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-title">Matematika</td>
+                  <td>
+                    <span class="status published">Published</span>
+                  </td>
+                  <td>5 Soal</td>
+                  <td class="table-actions">
+                    <a href="questions-matematika/index.html" class="action-link view">👁️ View Questions</a>
+                    <a href="edit.html" class="action-link edit">📝 Edit</a>
+                    <a href="index.html" class="action-link delete">🗑️ Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
 
-            <thead>
-
-              <tr>
-                <th>TITLE</th>
-                <th>STATUS</th>
-                <th>QUESTIONS COUNT</th>
-                <th>ACTIONS</th>
-              </tr>
-
-            </thead>
-
-            <tbody>
-
-              <tr>
-
-                <td class="table-title">
-                  HTML Basic Test
-                </td>
-
-                <td>
-                  <span class="status published">
-                    Published
-                  </span>
-                </td>
-
-                <td>10 Soal</td>
-
-                <td class="table-actions">
-
-                  <a href="questions/index.html" class="action-link view">
-                    👁️ View Questions
-                  </a>
-
-                  <a href="edit.html" class="action-link edit">
-                    📝 Edit
-                  </a>
-
-                  <a href="index.html" class="action-link delete">
-                    🗑️ Delete
-                  </a>
-
-                </td>
-
-              </tr>
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-      </section>
-
-    </main>
-
-    <footer class="page-footer">
-      <p>&copy; 2026 FloTest</p>
-    </footer>
+      <footer class="page-footer">
+        <p>&copy; 2026 FloTest</p>
+      </footer>
+    </div>
 
   </div>
-
-</div>
 
 </body>
 </html>

@@ -1,237 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kelola Tests — FloTest</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
 
-<body>
-
-<div class="app-layout">
-
-    <aside class="sidebar">
-
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
         <div class="sidebar-brand">
-            <div class="brand-logo">
-                <div class="brand-icon">Flo</div>
-                <span class="brand-name">Flo<span>Test</span></span>
-            </div>
+          <div class="brand-logo">
+            <div class="brand-icon">Flo</div>
+            <span class="brand-name">Flo<span>Test</span></span>
+          </div>
         </div>
 
         <div class="sidebar-user">
-            <div class="user-avatar">ADM</div>
-            <div class="user-info">
-                <div class="user-name">Super Admin</div>
-                <div class="user-role">Admin</div>
-            </div>
+          <div class="user-avatar">ADM</div>
+          <div class="user-info">
+            <div class="user-name">Super Admin</div>
+            <div class="user-role">Admin</div>
+          </div>
         </div>
 
         <nav class="sidebar-nav">
-            <div class="nav-label">Main Menu</div>
-            <a href="../dashboard.html" class="nav-item">🏠 Dashboard</a>
-            <a href="../users/index.html" class="nav-item">👥 Users List</a>
-            <a href="index.html" class="nav-item active">📝 Tests List</a>
-            <a href="questions/index.html" class="nav-item">❓ Questions List</a>
+          <div class="nav-label">Main Menu</div>
+          <a href="../dashboard.html" class="nav-item">🏠 Dashboard</a>
+          <a href="../users/index.html" class="nav-item">👥 Users List</a>
+          <a href="index.html" class="nav-item active">📝 Tests List</a>
         </nav>
 
         <div class="sidebar-footer">
-            <a href="../../index.html" class="nav-item btn-danger">🚪 Logout</a>
+          <a href="../../index.html" class="nav-item btn-danger">🚪 Logout</a>
         </div>
+      </aside>
 
-    </aside>
-
-    <div class="main-content">
-
+      <div class="main-content">
         <header class="topbar">
-            <h1 class="topbar-title">Manajemen Paket Ujian</h1>
+          <h1 class="topbar-title">Manajemen Paket Ujian</h1>
         </header>
 
         <main class="page-body">
+          <section class="content-section">
+            <div class="page-header page-header-flex">
+              <div>
+                <h2>Daftar Paket Ujian</h2>
+                <p>Kelola seluruh paket ujian yang tersedia pada sistem FloTest.</p>
+              </div>
+              <a href="create.html" class="btn btn-primary">+ Buat Paket Tes</a>
+            </div>
 
-            <section class="content-section">
+            <article class="card">
+              <h3>Daftar Paket Ujian</h3>
 
-                <div class="page-header page-header-flex">
-                    <div>
-                        <h2>Daftar Paket Ujian</h2>
-                        <p>Kelola seluruh paket ujian yang tersedia pada sistem FloTest.</p>
-                    </div>
-                    <a href="create.html" class="btn btn-primary">+ Buat Paket Tes</a>
-                </div>
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Judul Test</th>
+                      <th>Mentor</th>
+                      <th>Status</th>
+                      <th>Jumlah Soal</th>
+                      <th class="text-center">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Dasar Pemrograman</strong></td>
+                      <td>Budi Santoso</td>
+                      <td><span class="badge badge-published">Published</span></td>
+                      <td>5 Soal</td>
+                      <td class="text-center">
+                        <a href="questions-dasarpemrograman/index.html" class="btn btn-ghost btn-sm">👁 View</a>
+                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
+                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                      </td>
+                    </tr>
 
-                <article class="card">
+                    <tr>
+                      <td><strong>Basis Data</strong></td>
+                      <td>Budi Santoso</td>
+                      <td><span class="badge badge-published">Published</span></td>
+                      <td>5 Soal</td>
+                      <td class="text-center">
+                        <a href="questions-basisdata/index.html" class="btn btn-ghost btn-sm">👁 View</a>
+                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
+                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                      </td>
+                    </tr>
 
-                    <h3>Daftar Paket Ujian</h3>
+                    <tr>
+                      <td><strong>Matematika</strong></td>
+                      <td>Budi Santoso</td>
+                      <td><span class="badge badge-published">Published</span></td>
+                      <td>5 Soal</td>
+                      <td class="text-center">
+                        <a href="questions-matematika/index.html" class="btn btn-ghost btn-sm">👁 View</a>
+                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
+                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                      </td>
+                    </tr>
 
-                    <div class="table-wrapper">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Judul Test</th>
-                                    <th>Mentor</th>
-                                    <th>Status</th>
-                                    <th>Jumlah Soal</th>
-                                    <th class="text-center">Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                    <tr>
+                      <td><strong>HTML Basic Test</strong></td>
+                      <td>Siti Khadijah, M.Pd</td>
+                      <td><span class="badge badge-published">Published</span></td>
+                      <td>10 Soal</td>
+                      <td class="text-center">
+                        <a href="questions-htmlbasictest/index.html" class="btn btn-ghost btn-sm">👁 View</a>
+                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
+                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                      </td>
+                    </tr>
 
-                                <tr>
-                                    <td><strong>Dasar Pemrograman</strong></td>
-                                    <td>Budi Santoso</td>
-                                    <td>
-                                        <span class="badge badge-published">Published</span>
-                                    </td>
-                                    <td>5 Soal</td>
-                                    <td class="text-center">
-                                        <a href="questions/index.html" class="btn btn-ghost btn-sm">👁 View</a>
-                                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
-                                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
-                                    </td>
-                                </tr>
+                    <tr>
+                      <td><strong>CSS Basic Test</strong></td>
+                      <td>Siti Khadijah, M.Pd</td>
+                      <td><span class="badge badge-draft">Draft</span></td>
+                      <td>15 Soal</td>
+                      <td class="text-center">
+                        <a href="questions-cssbasictest/index.html" class="btn btn-ghost btn-sm">👁 View</a>
+                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
+                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                      </td>
+                    </tr>
 
-                                <tr>
-                                    <td><strong>Basis Data</strong></td>
-                                    <td>Budi Santoso</td>
-                                    <td>
-                                        <span class="badge badge-published">Published</span>
-                                    </td>
-                                    <td>5 Soal</td>
-                                    <td class="text-center">
-                                        <a href="questions/index.html" class="btn btn-ghost btn-sm">👁 View</a>
-                                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
-                                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td><strong>Matematika</strong></td>
-                                    <td>Budi Santoso</td>
-                                    <td>
-                                        <span class="badge badge-published">Published</span>
-                                    </td>
-                                    <td>5 Soal</td>
-                                    <td class="text-center">
-                                        <a href="questions/index.html" class="btn btn-ghost btn-sm">👁 View</a>
-                                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
-                                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
-
-                                                                        <tr>
-
-                                    <td><strong>HTML Basic Test</strong></td>
-
-                                    <td>Siti Khadijah, M.Pd</td>
-
-                                    <td>
-                                        <span class="badge badge-published">
-                                            Published
-                                        </span>
-                                    </td>
-
-                                    <td>10 Soal</td>
-
-                                    <td class="text-center">
-
-                                        <a href="questions/index.html" class="btn btn-ghost btn-sm">
-                                            👁 View
-                                        </a>
-
-                                        <a href="edit.html" class="btn btn-ghost btn-sm">
-                                            ✏ Edit
-                                        </a>
-
-                                        <button class="btn btn-ghost btn-sm text-danger">
-                                            🗑 Delete
-                                        </button>
-
-                                    </td>
-
-                                </tr>
-
-                                         <tr>
-
-                                    <td><strong>CSS Basic Test</strong></td>
-
-                                    <td>Siti Khadijah, M.Pd</td>
-
-                                    <td>
-                                        <span class="badge badge-draft">
-                                            Draft
-                                        </span>
-                                    </td>
-
-                                    <td>15 Soal</td>
-
-                                    <td class="text-center">
-
-                                        <a href="questions/index.html" class="btn btn-ghost btn-sm">
-                                            👁 View
-                                        </a>
-
-                                        <a href="edit.html" class="btn btn-ghost btn-sm">
-                                            ✏ Edit
-                                        </a>
-
-                                        <button class="btn btn-ghost btn-sm text-danger">
-                                            🗑 Delete
-                                        </button>
-
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-
-                                    <td><strong>Responsive Design Quiz</strong></td>
-
-                                    <td>Siti Khadijah, M. Pd</td>
-
-                                    <td>
-                                        <span class="badge badge-archived">
-                                            Archived
-                                        </span>
-                                    </td>
-
-                                    <td>8 Soal</td>
-
-                                    <td class="text-center">
-
-                                        <a href="questions/index.html" class="btn btn-ghost btn-sm">
-                                            👁 View
-                                        </a>
-
-                                        <a href="edit.html" class="btn btn-ghost btn-sm">
-                                            ✏ Edit
-                                        </a>
-
-                                        <button class="btn btn-ghost btn-sm text-danger">
-                                            🗑 Delete
-                                        </button>
-
-                                    </td>
-
-                                </tr>
-
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-
-                </article>
-
-            </section>
-
+                    <tr>
+                      <td><strong>Responsive Design Quiz</strong></td>
+                      <td>Siti Khadijah, M.Pd</td>
+                      <td><span class="badge badge-archived">Archived</span></td>
+                      <td>8 Soal</td>
+                      <td class="text-center">
+                        <a href="questions-responsivedesignquiz/index.html" class="btn btn-ghost btn-sm">👁 View</a>
+                        <a href="edit.html" class="btn btn-ghost btn-sm">✏ Edit</a>
+                        <button class="btn btn-ghost btn-sm text-danger">🗑 Delete</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </section>
         </main>
 
         <footer>© 2026 FloTest</footer>
-
+      </div>
     </div>
-
-</div>
-
-</body>
+  </body>
 </html>

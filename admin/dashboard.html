@@ -1,119 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard — FloTest</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard — FloTest</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <h2 class="visually-hidden">Menu Admin</h2>
 
-<div class="app-layout">
-
-  <aside class="sidebar">
-
-    <h2 class="visually-hidden">Menu Admin</h2>
-
-    <div class="sidebar-brand">
-      <div class="brand-logo">
-        <div class="brand-icon">Flo</div>
-        <span class="brand-name">Flo<span>Test</span></span>
-      </div>
-    </div>
-
-    <div class="sidebar-user">
-      <div class="user-avatar">ADM</div>
-      <div class="user-info">
-        <div class="user-name">Super Admin</div>
-        <div class="user-role">Admin</div>
-      </div>
-    </div>
-
-    <nav class="sidebar-nav" aria-label="Navigasi Admin">
-
-      <div class="nav-label">Main Menu</div>
-
-      <a href="dashboard.html" class="nav-item active" aria-current="page">
-        🏠 Dashboard
-      </a>
-
-      <a href="users/index.html" class="nav-item">
-        👥 Users List
-      </a>
-
-      <a href="tests/index.html" class="nav-item">
-        📝 Tests List
-      </a>
-
-      <a href="tests/questions/index.html" class="nav-item">
-        ❓ Questions List
-      </a>
-
-    </nav>
-
-    <div class="sidebar-footer">
-      <a href="../index.html" class="nav-item btn-danger">
-        🚪 Logout
-      </a>
-    </div>
-
-  </aside>
-
-  <div class="main-content">
-
-    <header class="topbar">
-      <h2 class="topbar-title">Panel Kendali Admin</h2>
-    </header>
-
-    <main class="page-body">
-
-      <section class="content-section">
-
-        <div class="page-header">
-          <h1>Sistem FloTest</h1>
-          <p>Memantau dan mengelola seluruh data pengguna, ujian, dan bank soal pada sistem FloTest.</p>
+        <div class="sidebar-brand">
+          <div class="brand-logo">
+            <div class="brand-icon">Flo</div>
+            <span class="brand-name">Flo<span>Test</span></span>
+          </div>
         </div>
 
-        <section class="stats-grid">
+        <div class="sidebar-user">
+          <div class="user-avatar">ADM</div>
+          <div class="user-info">
+            <div class="user-name">Super Admin</div>
+            <div class="user-role">Admin</div>
+          </div>
+        </div>
 
-          <article class="stat-card">
-            <div class="stat-icon blue">👥</div>
-            <div class="stat-info">
-              <p class="stat-value">8</p>
-              <p class="stat-label">Total Users</p>
+        <nav class="sidebar-nav" aria-label="Navigasi Admin">
+          <div class="nav-label">Main Menu</div>
+
+          <a href="dashboard.html" class="nav-item active" aria-current="page"> 🏠 Dashboard </a>
+
+          <a href="users/index.html" class="nav-item"> 👥 Users List </a>
+
+          <a href="tests/index.html" class="nav-item"> 📝 Tests List </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="../index.html" class="nav-item btn-danger"> 🚪 Logout </a>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <header class="topbar">
+          <h2 class="topbar-title">Panel Kendali Admin</h2>
+        </header>
+
+        <main class="page-body">
+          <section class="content-section">
+            <div class="page-header">
+              <h1>Sistem FloTest</h1>
+              <p>Memantau dan mengelola seluruh data pengguna, ujian, dan bank soal pada sistem FloTest.</p>
             </div>
-          </article>
 
-          <article class="stat-card">
-            <div class="stat-icon green">📝</div>
-            <div class="stat-info">
-              <p class="stat-value">6</p>
-              <p class="stat-label">Total Tests</p>
-            </div>
-          </article>
+            <section class="stats-grid">
+              <article class="stat-card">
+                <div class="stat-icon blue">👥</div>
+                <div class="stat-info">
+                  <p class="stat-value">8</p>
+                  <p class="stat-label">Total Users</p>
+                </div>
+              </article>
 
-          <article class="stat-card">
-            <div class="stat-icon orange">❓</div>
-            <div class="stat-info">
-              <p class="stat-value">48</p>
-              <p class="stat-label">Total Questions</p>
-            </div>
-          </article>
+              <article class="stat-card">
+                <div class="stat-icon green">📝</div>
+                <div class="stat-info">
+                  <p class="stat-value">6</p>
+                  <p class="stat-label">Total Tests</p>
+                </div>
+              </article>
 
-        </section>
+              <article class="stat-card">
+                <div class="stat-icon orange">❓</div>
+                <div class="stat-info">
+                  <p class="stat-value">48</p>
+                  <p class="stat-label">Total Questions</p>
+                </div>
+              </article>
+            </section>
+          </section>
+        </main>
 
-      </section>
-
-    </main>
-
-    <footer class="page-footer">
-      <p>&copy; 2026 FloTest</p>
-    </footer>
-
-  </div>
-
-</div>
-
-</body>
+        <footer class="page-footer">
+          <p>&copy; 2026 FloTest</p>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

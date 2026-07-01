@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Question — Responsive Design Quiz | FloTest</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-logo">
+            <div class="brand-icon">Flo</div>
+            <span class="brand-name">Flo<span>Test</span></span>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <div class="nav-label">Navigasi</div>
+
+          <a href="index.html" class="nav-item"> ⬅️ Kembali ke Daftar Questions </a>
+        </nav>
+      </aside>
+
+      <div class="main-content">
+        <header class="topbar">
+          <span class="topbar-title"> Panel Admin / Tambah Bank Soal </span>
+        </header>
+
+        <main class="page-body">
+          <section class="page-header">
+            <h1>➕ Tambah Soal Responsive Design Quiz</h1>
+
+            <p>
+              Tambahkan pertanyaan baru ke dalam paket
+              <strong>Responsive Design Quiz</strong>.
+            </p>
+          </section>
+
+          <section class="card card-form">
+            <form action="index.html" method="GET" onsubmit="alert('Butir soal ujian berhasil ditambahkan!')">
+              <div class="form-group">
+                <label for="questionText" class="form-label"> Pertanyaan (Question Text) </label>
+
+                <textarea id="questionText" class="form-input" rows="4" placeholder="Tuliskan teks pertanyaan di sini..." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"> Pilihan Jawaban </label>
+
+                <div class="option-row">
+                  <span class="option-label">A.</span>
+
+                  <input type="text" class="form-input" placeholder="Pilihan A" required />
+                </div>
+
+                <div class="option-row">
+                  <span class="option-label">B.</span>
+
+                  <input type="text" class="form-input" placeholder="Pilihan B" required />
+                </div>
+
+                <div class="option-row">
+                  <span class="option-label">C.</span>
+
+                  <input type="text" class="form-input" placeholder="Pilihan C" required />
+                </div>
+
+                <div class="option-row">
+                  <span class="option-label">D.</span>
+
+                  <input type="text" class="form-input" placeholder="Pilihan D" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="answerKey" class="form-label"> Kunci Jawaban Benar </label>
+
+                <select id="answerKey" class="form-input" required>
+                  <option value="">-- Tentukan Kunci Jawaban --</option>
+
+                  <option value="A">Pilihan A</option>
+                  <option value="B">Pilihan B</option>
+                  <option value="C">Pilihan C</option>
+                  <option value="D">Pilihan D</option>
+                </select>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Simpan Pertanyaan</button>
+
+                <a href="index.html" class="btn btn-secondary"> Batal </a>
+              </div>
+            </form>
+          </section>
+        </main>
+
+        <footer class="page-footer">
+          <p>© 2026 FloTest — Panel Evaluasi Soal</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

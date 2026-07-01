@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelola Questions — FloTest</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-logo">
+            <div class="brand-icon">Flo</div>
+            <span class="brand-name">Flo<span>Test</span></span>
+          </div>
+        </div>
+
+        <div class="sidebar-user">
+          <div class="user-avatar">ADM</div>
+          <div class="user-info">
+            <div class="user-name">Super Admin</div>
+            <div class="user-role">Admin</div>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <div class="nav-label">Navigasi</div>
+          <a href="../index.html" class="nav-item">⬅️ Kembali ke Daftar Tests</a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="../../../index.html" class="nav-item btn-danger nav-center">🚪 Logout</a>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <header class="topbar">
+          <span class="topbar-title">Panel Admin / Manajemen Bank Soal</span>
+        </header>
+
+        <main class="page-body">
+          <!-- MATEMATIKA -->
+          <section class="page-header page-header-flex" style="margin-top: 2rem">
+            <div>
+              <h1>❓ Questions List: <span class="text-primary">Matematika</span></h1>
+              <p>Mengelola item pertanyaan pilihan ganda untuk paket evaluasi ujian terpilih.</p>
+            </div>
+            <a href="create.html" class="btn btn-primary">+ Tambah Soal</a>
+          </section>
+
+          <section class="card">
+            <h3 class="section-title">Matematika — Daftar Soal</h3>
+            <div class="table-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th class="col-number">NO</th>
+                    <th>QUESTION TEXT</th>
+                    <th class="col-type">TYPE</th>
+                    <th class="col-action">ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-number">1</td>
+                    <td>
+                      <strong>Berapakah hasil dari 15 × 8 − 20 ÷ 4?</strong>
+                      <div class="table-note">Kunci: C. 115</div>
+                    </td>
+                    <td><span class="badge badge-secondary">Pilihan Ganda</span></td>
+                    <td class="table-actions">
+                      <a href="edit.html" class="action-edit">📝 Edit</a>
+                      <a href="#" class="action-delete" onclick="confirm('Hapus soal nomor 1?') && alert('Soal berhasil dihapus')">🗑️ Delete</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-number">2</td>
+                    <td>
+                      <strong>Jika x² − 9 = 0, berapakah nilai x yang positif?</strong>
+                      <div class="table-note">Kunci: B. 3</div>
+                    </td>
+                    <td><span class="badge badge-secondary">Pilihan Ganda</span></td>
+                    <td class="table-actions">
+                      <a href="edit.html" class="action-edit">📝 Edit</a>
+                      <a href="#" class="action-delete" onclick="confirm('Hapus soal nomor 2?') && alert('Soal berhasil dihapus')">🗑️ Delete</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-number">3</td>
+                    <td>
+                      <strong>Berapa luas lingkaran dengan jari-jari 7 cm? (π = 22/7)</strong>
+                      <div class="table-note">Kunci: A. 154 cm²</div>
+                    </td>
+                    <td><span class="badge badge-secondary">Pilihan Ganda</span></td>
+                    <td class="table-actions">
+                      <a href="edit.html" class="action-edit">📝 Edit</a>
+                      <a href="#" class="action-delete" onclick="confirm('Hapus soal nomor 3?') && alert('Soal berhasil dihapus')">🗑️ Delete</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-number">4</td>
+                    <td>
+                      <strong>Sebuah segitiga memiliki alas 10 cm dan tinggi 6 cm. Berapakah luasnya?</strong>
+                      <div class="table-note">Kunci: D. 30 cm²</div>
+                    </td>
+                    <td><span class="badge badge-secondary">Pilihan Ganda</span></td>
+                    <td class="table-actions">
+                      <a href="edit.html" class="action-edit">📝 Edit</a>
+                      <a href="#" class="action-delete" onclick="confirm('Hapus soal nomor 4?') && alert('Soal berhasil dihapus')">🗑️ Delete</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="table-number">5</td>
+                    <td>
+                      <strong>Berapakah nilai dari log₁₀(1000)?</strong>
+                      <div class="table-note">Kunci: B. 3</div>
+                    </td>
+                    <td><span class="badge badge-secondary">Pilihan Ganda</span></td>
+                    <td class="table-actions">
+                      <a href="edit.html" class="action-edit">📝 Edit</a>
+                      <a href="#" class="action-delete" onclick="confirm('Hapus soal nomor 5?') && alert('Soal berhasil dihapus')">🗑️ Delete</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+
+        <footer class="page-footer">
+          <span>© 2026 FloTest — Panel Evaluasi Soal</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

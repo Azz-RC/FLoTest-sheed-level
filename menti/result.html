@@ -1,164 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hasil Tes — FloTest</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
-<body>
-
-  <div class="app-layout">
-
-    <aside class="sidebar" aria-label="Sidebar navigasi">
-      <div class="sidebar-brand">
-        <div class="brand-logo">
-          <div class="brand-icon">Flo</div>
-          <span class="brand-name">Flo<span>Test</span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasil Tes — FloTest</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar" aria-label="Sidebar navigasi">
+        <div class="sidebar-brand">
+          <div class="brand-logo">
+            <div class="brand-icon">Flo</div>
+            <span class="brand-name">Flo<span>Test</span></span>
+          </div>
         </div>
-      </div>
 
-      <div class="sidebar-user">
-        <div class="user-avatar">AW</div>
-        <div class="user-info">
-          <div class="user-name">Andi Wijaya</div>
-          <div class="user-role">Menti</div>
+        <div class="sidebar-user">
+          <div class="user-avatar">AW</div>
+          <div class="user-info">
+            <div class="user-name">Andi Wijaya</div>
+            <div class="user-role">Menti</div>
+          </div>
         </div>
-      </div>
 
-      <nav class="sidebar-nav" aria-label="Menu menti">
-        <div class="nav-label">Menu</div>
-        <a href="dashboard.html" class="nav-item">
-          <span class="nav-icon">🏠</span> Dashboard
-        </a>
-        <a href="take-test.html" class="nav-item">
-          <span class="nav-icon">✏️</span> Kerjakan Tes
-        </a>
-        <a href="result.html" class="nav-item active">
-          <span class="nav-icon">📊</span> Hasil Tes
-        </a>
-      </nav>
-
-      <div class="sidebar-footer">
-        <a href="../index.html" class="nav-item btn-danger">
-          <span class="nav-icon">🚪</span> Keluar
-        </a>
-      </div>
-    </aside>
-
-    <div class="main-content">
-
-      <header class="topbar">
-        <span class="topbar-title">Hasil Tes</span>
-        <div class="topbar-actions">
-          <a href="dashboard.html" class="btn btn-outline btn-sm">← Kembali</a>
-        </div>
-      </header>
-
-      <main class="page-body">
-
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="dashboard.html">Dashboard</a>
-          <span class="breadcrumb-sep">›</span>
-          <span>Hasil Tes — Dasar Pemrograman</span>
+        <nav class="sidebar-nav" aria-label="Menu menti">
+          <div class="nav-label">Menu</div>
+          <a href="dashboard.html" class="nav-item"> <span class="nav-icon">🏠</span> Dashboard </a>
+          <a href="take-test.html" class="nav-item"> <span class="nav-icon">✏️</span> Kerjakan Tes </a>
+          <a href="result.html" class="nav-item active"> <span class="nav-icon">📊</span> Hasil Tes </a>
         </nav>
 
-        <section class="result-score-card" aria-labelledby="score-heading">
-          <h1 id="score-heading" class="score-card-title">Dasar Pemrograman</h1>
+        <div class="sidebar-footer">
+          <a href="../index.html" class="nav-item btn-danger"> <span class="nav-icon">🚪</span> Keluar </a>
+        </div>
+      </aside>
 
-          <div class="result-score-value">80</div>
-          <div class="result-score-label">Nilai Kamu</div>
-
-          <div class="result-score-meta">
-            <div class="result-meta-item">
-              <span class="result-meta-value">4</span>
-              <span class="result-meta-label">Benar</span>
-            </div>
-            <div class="result-meta-item">
-              <span class="result-meta-value">1</span>
-              <span class="result-meta-label">Salah</span>
-            </div>
-            <div class="result-meta-item">
-              <span class="result-meta-value">5</span>
-              <span class="result-meta-label">Total Soal</span>
-            </div>
-            <div class="result-meta-item">
-              <span class="result-meta-value">22m</span>
-              <span class="result-meta-label">Waktu</span>
-            </div>
+      <div class="main-content">
+        <header class="topbar">
+          <span class="topbar-title">Hasil Tes</span>
+          <div class="topbar-actions">
+            <a href="dashboard.html" class="btn btn-outline btn-sm">← Kembali</a>
           </div>
-        </section>
+        </header>
 
-        <section class="card" aria-labelledby="detail-heading">
-          <div class="card-header">
-            <h2 class="card-title" id="detail-heading">Detail Jawaban</h2>
-          </div>
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Pertanyaan</th>
-                  <th>Jawaban Anda</th>
-                  <th>Jawaban Benar</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
+        <main class="page-body">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="dashboard.html">Dashboard</a>
+            <span class="breadcrumb-sep">›</span>
+            <span>Hasil Tes — Dasar Pemrograman</span>
+          </nav>
 
-                <tr>
-                  <td>1</td>
-                  <td>Apa yang dimaksud dengan variabel dalam pemrograman?</td>
-                  <td>B. Tempat penyimpanan data yang nilainya dapat berubah</td>
-                  <td>B. Tempat penyimpanan data yang nilainya dapat berubah</td>
-                  <td><span class="answer-status answer-correct">✅ Benar</span></td>
-                </tr>
+          <section class="result-score-card" aria-labelledby="score-heading">
+            <h1 id="score-heading" class="score-card-title">Dasar Pemrograman</h1>
 
-                <tr>
-                  <td>2</td>
-                  <td>Manakah tipe data yang digunakan untuk menyimpan angka desimal?</td>
-                  <td>C. Float</td>
-                  <td>C. Float</td>
-                  <td><span class="answer-status answer-correct">✅ Benar</span></td>
-                </tr>
+            <div class="result-score-value">80</div>
+            <div class="result-score-label">Nilai Kamu</div>
 
-                <tr>
-                  <td>3</td>
-                  <td>Struktur kontrol manakah yang digunakan untuk mengulang blok kode selama kondisi bernilai benar?</td>
-                  <td>B. If</td>
-                  <td>A. While</td>
-                  <td><span class="answer-status answer-wrong">❌ Salah</span></td>
-                </tr>
+            <div class="result-score-meta">
+              <div class="result-meta-item">
+                <span class="result-meta-value">4</span>
+                <span class="result-meta-label">Benar</span>
+              </div>
+              <div class="result-meta-item">
+                <span class="result-meta-value">1</span>
+                <span class="result-meta-label">Salah</span>
+              </div>
+              <div class="result-meta-item">
+                <span class="result-meta-value">5</span>
+                <span class="result-meta-label">Total Soal</span>
+              </div>
+              <div class="result-meta-item">
+                <span class="result-meta-value">22m</span>
+                <span class="result-meta-label">Waktu</span>
+              </div>
+            </div>
+          </section>
 
-                <tr>
-                  <td>4</td>
-                  <td>Apa output dari kode berikut: print(2 ** 3) dalam Python?</td>
-                  <td>D. 8</td>
-                  <td>D. 8</td>
-                  <td><span class="answer-status answer-correct">✅ Benar</span></td>
-                </tr>
+          <section class="card" aria-labelledby="detail-heading">
+            <div class="card-header">
+              <h2 class="card-title" id="detail-heading">Detail Jawaban</h2>
+            </div>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Pertanyaan</th>
+                    <th>Jawaban Anda</th>
+                    <th>Jawaban Benar</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Apa yang dimaksud dengan variabel dalam pemrograman?</td>
+                    <td>B. Tempat penyimpanan data yang nilainya dapat berubah</td>
+                    <td>B. Tempat penyimpanan data yang nilainya dapat berubah</td>
+                    <td><span class="answer-status answer-correct">✅ Benar</span></td>
+                  </tr>
 
-                <tr>
-                  <td>5</td>
-                  <td>Apa fungsi dari keyword "return" di dalam sebuah fungsi?</td>
-                  <td>B. Mengembalikan nilai dari fungsi ke pemanggil</td>
-                  <td>B. Mengembalikan nilai dari fungsi ke pemanggil</td>
-                  <td><span class="answer-status answer-correct">✅ Benar</span></td>
-                </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Manakah tipe data yang digunakan untuk menyimpan angka desimal?</td>
+                    <td>C. Float</td>
+                    <td>C. Float</td>
+                    <td><span class="answer-status answer-correct">✅ Benar</span></td>
+                  </tr>
 
-              </tbody>
-            </table>
-          </div>
-        </section>
+                  <tr>
+                    <td>3</td>
+                    <td>Struktur kontrol manakah yang digunakan untuk mengulang blok kode selama kondisi bernilai benar?</td>
+                    <td>B. If</td>
+                    <td>A. While</td>
+                    <td><span class="answer-status answer-wrong">❌ Salah</span></td>
+                  </tr>
 
-      </main>
+                  <tr>
+                    <td>4</td>
+                    <td>Apa output dari kode berikut: print(2 ** 3) dalam Python?</td>
+                    <td>D. 8</td>
+                    <td>D. 8</td>
+                    <td><span class="answer-status answer-correct">✅ Benar</span></td>
+                  </tr>
 
-      <footer>
-        <span>© 2026 FloTest</span>
-      </footer>
+                  <tr>
+                    <td>5</td>
+                    <td>Apa fungsi dari keyword "return" di dalam sebuah fungsi?</td>
+                    <td>B. Mengembalikan nilai dari fungsi ke pemanggil</td>
+                    <td>B. Mengembalikan nilai dari fungsi ke pemanggil</td>
+                    <td><span class="answer-status answer-correct">✅ Benar</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
 
+        <footer>
+          <span>© 2026 FloTest</span>
+        </footer>
+      </div>
     </div>
-  </div>
-
-</body>
+  </body>
 </html>

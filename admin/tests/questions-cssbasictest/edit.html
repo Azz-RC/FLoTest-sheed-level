@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Question — CSS Basic Test | FloTest</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="app-layout">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-logo">
+            <div class="brand-icon">Flo</div>
+            <span class="brand-name">Flo<span>Test</span></span>
+          </div>
+        </div>
+
+        <div class="sidebar-user">
+          <div class="user-avatar">ADM</div>
+          <div class="user-info">
+            <div class="user-name">Super Admin</div>
+            <div class="user-role">Admin</div>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <div class="nav-label">Navigasi</div>
+
+          <a href="index.html" class="nav-item"> ⬅️ Kembali ke Daftar Questions </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <a href="../../../index.html" class="nav-item btn-danger nav-center"> 🚪 Logout </a>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <header class="topbar">
+          <span class="topbar-title"> Panel Admin / Edit Bank Soal </span>
+        </header>
+
+        <main class="page-body">
+          <section class="page-header">
+            <h1>📝 Edit Soal CSS Basic Test</h1>
+            <p>Memperbarui pertanyaan beserta pilihan jawaban dan kunci jawaban.</p>
+          </section>
+
+          <section class="card card-form">
+            <form action="index.html" method="GET" onsubmit="alert('Perubahan soal berhasil disimpan!')">
+              <div class="form-group">
+                <label for="questionText" class="form-label"> Teks Pertanyaan </label>
+
+                <textarea id="questionText" class="form-input" rows="4" required>Properti CSS apa yang digunakan untuk mengubah warna teks?</textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"> Pilihan Jawaban </label>
+
+                <div class="option-row">
+                  <span class="option-label">A.</span>
+                  <input type="text" class="form-input" value="font-color" required />
+                </div>
+
+                <div class="option-row">
+                  <span class="option-label">B.</span>
+                  <input type="text" class="form-input" value="color" required />
+                </div>
+
+                <div class="option-row">
+                  <span class="option-label">C.</span>
+                  <input type="text" class="form-input" value="text-color" required />
+                </div>
+
+                <div class="option-row">
+                  <span class="option-label">D.</span>
+                  <input type="text" class="form-input" value="font-style" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="answerKey" class="form-label"> Kunci Jawaban </label>
+
+                <select id="answerKey" class="form-input" required>
+                  <option value="A">Pilihan A (font-color)</option>
+                  <option value="B" selected>Pilihan B (color)</option>
+                  <option value="C">Pilihan C (text-color)</option>
+                  <option value="D">Pilihan D (font-style)</option>
+                </select>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-warning">💾 Update Soal</button>
+
+                <a href="index.html" class="btn btn-secondary"> Batal </a>
+              </div>
+            </form>
+          </section>
+        </main>
+
+        <footer class="page-footer">
+          <span>© 2026 FloTest — Panel Evaluasi Soal</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
